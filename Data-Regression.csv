@@ -1,0 +1,309 @@
+Match,Innings,Date,M/Inns,Posn,Versus,Ground,How Dismissed,Runs,B/F,S/R,Progressive-Runs,Progressive-B/F,Progressive-Avg,Progressive-S/R,Captain,Dismissal Type,City,State/Province,Country,ICC Region,Latitude,longitude,SENA
+1,1.0,2008-08-18,1st,2,Sri Lanka,Rangiri Dambulla International Stadium,lbw b K M D N Kulasekara,12,22,54.55,12,22,12.0,54.55,No,LBW,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+2,2.0,2008-08-20,2nd,2,Sri Lanka,Rangiri Dambulla International Stadium,c C K Kapugedera b T Thushara,37,67,55.22,49,89,24.5,55.06,No,Caught,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+3,3.0,2008-08-24,1st,1,Sri Lanka,R Premadasa Stadium,run out,25,38,65.79,74,127,24.67,58.27,No,Run Out,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+4,4.0,2008-08-27,1st,1,Sri Lanka,R Premadasa Stadium,b T Thushara,54,66,81.82,128,193,32.0,66.32,No,Bowled,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+5,5.0,2008-08-29,2nd,1,Sri Lanka,R Premadasa Stadium,lbw b K M D N Kulasekara,31,46,67.39,159,239,31.8,66.53,No,LBW,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+6,6.0,2009-09-14,1st,7,Sri Lanka,R Premadasa Stadium,not out,2,2,100.0,161,241,32.2,66.8,No,Not Out,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+7,7.0,2009-09-26,2nd,4,Pakistan,SuperSport Park,c Umar Gul b Shahid Afridi,16,24,66.67,177,265,29.5,66.79,No,Caught,Centurion,Gauteng,South Africa,Africa,-25.8596,28.195,1
+8,,2009-09-28,N/A - No Result,0,Australia,SuperSport Park,did not bat,0,0,0.0,177,265,29.5,66.79,No,Did Not Bat,Centurion,Gauteng,South Africa,Africa,-25.8596,28.195,1
+9,8.0,2009-09-30,2nd,4,West Indies,Wanderers Stadium,not out,79,104,75.96,256,369,42.67,69.38,No,Not Out,Johannesburg,Gauteng,South Africa,Africa,-26.131,28.0567,1
+10,9.0,2009-10-25,2nd,4,Australia,Reliance Stadium,c S R Watson b A C Voges,30,41,73.17,286,410,40.86,69.76,No,Caught,Vadodara,Gujarat,India,Asia,22.3072,73.1812,0
+11,10.0,2009-11-02,2nd,3,Australia,Punjab Cricket Association IS Bindra Stadium,c †G A Manou b D E Bollinger,10,16,62.5,296,426,37.0,69.48,No,Caught,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+12,11.0,2009-12-15,1st,7,Sri Lanka,Madhavrao Scindia Cricket Ground,b U W M B C A Welegedara,27,19,142.11,323,445,35.89,72.58,No,Bowled,Gwalior,Madhya Pradesh,India,Asia,26.2124,78.1772,0
+13,12.0,2009-12-18,1st,4,Sri Lanka,Vidarbha Cricket Association Stadium,lbw b S Randiv,54,65,83.08,377,510,37.7,73.92,No,LBW,Nagpur,Maharashtra,India,Asia,21.1613,79.0489,0
+14,13.0,2009-12-24,2nd,4,Sri Lanka,Eden Gardens,c sub b S Randiv,107,114,93.86,484,624,44.0,77.56,No,Caught,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+15,,2009-12-27,N/A - No Result,0,Sri Lanka,Arun Jaitley Stadium,did not bat,0,0,0.0,484,624,44.0,77.56,No,Did Not Bat,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+16,14.0,2010-01-05,1st,3,Sri Lanka,Shere Bangla National Stadium,c †K C Sangakkara b U W M B C A Welegedara,9,12,75.0,493,636,41.08,77.52,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+17,15.0,2010-01-07,2nd,3,Bangladesh,Shere Bangla National Stadium,c & b Shakib Al Hasan,91,102,89.22,584,738,44.92,79.13,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+18,16.0,2010-01-10,2nd,3,Sri Lanka,Shere Bangla National Stadium,not out,71,68,104.41,655,806,50.38,81.27,No,Not Out,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+19,17.0,2010-01-11,2nd,3,Bangladesh,Shere Bangla National Stadium,not out,102,95,107.37,757,901,58.23,84.02,No,Not Out,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+20,18.0,2010-01-13,1st,3,Sri Lanka,Shere Bangla National Stadium,c †K C Sangakkara b U W M B C A Welegedara,2,8,25.0,759,909,54.21,83.5,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+21,19.0,2010-02-21,1st,5,South Africa,Sawai Mansingh Stadium,c H H Gibbs b J A Morkel,31,46,67.39,790,955,52.67,82.72,No,Caught,Jaipur,Rajasthan,India,Asia,26.894,75.8084,0
+22,,2010-02-24,1st,0,South Africa,Captain Roop Singh Stadium,did not bat,0,0,0.0,790,955,52.67,82.72,No,Did Not Bat,Gwalior,Madhya Pradesh,India,Asia,26.2183,78.1828,0
+23,20.0,2010-02-27,2nd,3,South Africa,Narendra Modi Stadium,c †M V Boucher b D W Steyn,57,71,80.28,847,1026,52.94,82.55,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+24,21.0,2010-05-28,1st,3,Zimbabwe,Queens Sports Club,run out,0,0,0.0,847,1026,49.82,82.55,No,Run Out,Bulawayo,Bulawayo,Zimbabwe,Africa,-20.1483,28.5806,0
+25,22.0,2010-05-30,2nd,3,Sri Lanka,Queens Sports Club,c C R D Fernando b S Randiv,82,92,89.13,929,1118,51.61,83.09,No,Caught,Bulawayo,Bulawayo,Zimbabwe,Africa,-20.1483,28.5806,0
+26,23.0,2010-06-03,1st,3,Zimbabwe,Harare Sports Club,c †T Taibu b P Utseya,18,29,62.07,947,1147,49.84,82.56,No,Caught,Harare,Harare,Zimbabwe,Africa,-17.8294,31.0539,0
+27,24.0,2010-06-05,1st,3,Sri Lanka,Harare Sports Club,c B M A J Mendis b T Thushara,68,95,71.58,1015,1242,50.75,81.72,No,Caught,Harare,Harare,Zimbabwe,Africa,-17.8294,31.0539,0
+28,25.0,2010-06-16,2nd,3,Bangladesh,Rangiri Dambulla International Stadium,st Mushfiqur Rahim b Shakib Al Hasan,11,22,50.0,1026,1264,48.86,81.17,No,Stumped,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+29,26.0,2010-06-19,2nd,3,Pakistan,Rangiri Dambulla International Stadium,b Saeed Ajmal,18,27,66.67,1044,1291,47.45,80.87,No,Bowled,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+30,27.0,2010-06-22,1st,3,Sri Lanka,Rangiri Dambulla International Stadium,c †K C Sangakkara b M F Maharoof,10,14,71.43,1054,1305,45.83,80.77,No,Caught,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+31,28.0,2010-06-24,1st,3,Sri Lanka,Rangiri Dambulla International Stadium,c †K C Sangakkara b S L Malinga,28,34,82.35,1082,1339,45.08,80.81,No,Caught,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+32,29.0,2010-08-16,2nd,3,Sri Lanka,Rangiri Dambulla International Stadium,c †K C Sangakkara b C R D Fernando,0,3,0.0,1082,1342,43.28,80.63,No,Caught,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+33,30.0,2010-08-25,1st,3,New Zealand,Rangiri Dambulla International Stadium,c †G J Hopkins b T G Southee,8,16,50.0,1090,1358,41.92,80.27,No,Caught,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+34,31.0,2010-08-28,2nd,3,Sri Lanka,Rangiri Dambulla International Stadium,c A D Mathews b N L T C Perera,37,57,64.91,1127,1415,41.74,79.65,No,Caught,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+35,32.0,2010-10-20,2nd,3,Australia,Dr YS Rajasekhara Reddy Cricket Stadium,c J R Hopes b J W Hastings,118,121,97.52,1245,1536,44.46,81.05,No,Caught,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+36,33.0,2010-11-28,1st,3,New Zealand,Nehru Stadium (Guwahati),c J M How b A J McKay,105,104,100.96,1350,1640,46.55,82.32,No,Caught,Guwahati,Assam,India,Asia,26.1505,91.7757,0
+37,34.0,2010-12-01,2nd,3,New Zealand,Sawai Mansingh Stadium,c L R P L Taylor b A J McKay,64,73,87.67,1414,1713,47.13,82.55,No,Caught,Jaipur,Rajasthan,India,Asia,26.894,75.8084,0
+38,35.0,2010-12-04,2nd,3,New Zealand,Reliance Stadium,not out,63,70,90.0,1477,1783,49.23,82.84,No,Not Out,Vadodara,Gujarat,India,Asia,22.3072,73.1812,0
+39,36.0,2010-12-07,2nd,3,New Zealand,M Chinnaswamy Stadium,c K D Mills b A J McKay,0,2,0.0,1477,1785,47.65,82.75,No,Caught,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+40,37.0,2010-12-10,2nd,3,New Zealand,MA Chidambaram Stadium,c L R P L Taylor b D L Vettori,2,8,25.0,1479,1793,46.22,82.49,No,Caught,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+41,38.0,2011-01-12,2nd,3,South Africa,Kingsmead,c G C Smith b D W Steyn,54,70,77.14,1533,1863,46.45,82.29,No,Caught,Durban,KwaZulu-Natal,South Africa,Africa,-29.8587,31.0218,1
+42,39.0,2011-01-15,1st,3,South Africa,Wanderers Stadium,run out,22,34,64.71,1555,1897,45.74,81.97,No,Run Out,Johannesburg,Gauteng,South Africa,Africa,-26.131,28.0567,1
+43,40.0,2011-01-18,2nd,3,South Africa,Newlands,c †A B de Villiers b M Morkel,28,41,68.29,1583,1938,45.23,81.68,No,Caught,Cape Town,Western Cape,South Africa,Africa,-33.9715,18.4689,1
+44,41.0,2011-01-21,2nd,3,South Africa,St George's Park,not out,87,92,94.57,1670,2030,47.71,82.27,No,Not Out,Gqeberha,Eastern Cape,South Africa,Africa,-33.9658,25.6022,1
+45,42.0,2011-01-23,2nd,3,South Africa,SuperSport Park,c †A B de Villiers b M Morkel,2,6,33.33,1672,2036,46.44,82.12,No,Caught,Centurion,Gauteng,South Africa,Africa,-25.8596,28.195,1
+46,43.0,2011-02-19,1st,4,Bangladesh,Shere Bangla National Stadium,not out,100,83,120.48,1772,2119,49.22,83.62,No,Not Out,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+47,44.0,2011-02-27,1st,7,England,M Chinnaswamy Stadium,b T T Bresnan,8,5,160.0,1780,2124,48.11,83.8,No,Bowled,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+48,45.0,2011-03-06,2nd,4,Ireland,M Chinnaswamy Stadium,run out,34,53,64.15,1814,2177,47.74,83.33,No,Run Out,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+49,46.0,2011-03-09,2nd,5,Netherlands,Arun Jaitley Stadium,b P W Borren,12,20,60.0,1826,2197,46.82,83.11,No,Bowled,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+50,47.0,2011-03-12,1st,7,South Africa,Vidarbha Cricket Association Stadium,c & b R J Peterson,1,3,33.33,1827,2200,45.68,83.05,No,Caught,Nagpur,Maharashtra,India,Asia,21.1613,79.0489,0
+51,48.0,2011-03-20,1st,3,West Indies,MA Chidambaram Stadium,b R Rampaul,59,76,77.63,1886,2276,46.0,82.86,No,Bowled,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+52,49.0,2011-03-24,2nd,4,Australia,Narendra Modi Stadium,c M J Clarke b D J Hussey,24,33,72.73,1910,2309,45.48,82.72,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+53,50.0,2011-03-30,1st,4,Pakistan,Punjab Cricket Association IS Bindra Stadium,c Umar Akmal b Wahab Riaz,9,21,42.86,1919,2330,44.63,82.36,No,Caught,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+54,51.0,2011-04-02,2nd,4,Sri Lanka,Wankhede Stadium,c & b T M Dilshan,35,49,71.43,1954,2379,44.41,82.14,No,Caught,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+55,52.0,2011-06-06,2nd,3,West Indies,Queen's Park Oval,c †C S Baugh b R Rampaul,2,8,25.0,1956,2387,43.47,81.94,No,Caught,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+56,53.0,2011-06-08,2nd,3,West Indies,Queen's Park Oval,c K A Pollard b D Bishoo,81,103,78.64,2037,2490,44.28,81.81,No,Caught,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+57,54.0,2011-06-11,2nd,3,West Indies,Sir Vivian Richards Stadium,lbw b D J G Sammy,0,1,0.0,2037,2491,43.34,81.77,No,LBW,North Sound,,Antigua and Barbuda,West Indies,17.1165,-61.7842,0
+58,55.0,2011-06-13,2nd,3,West Indies,Sir Vivian Richards Stadium,st C S Baugh b A Martin,22,33,66.67,2059,2524,42.9,81.58,No,Stumped,North Sound,,Antigua and Barbuda,West Indies,17.1165,-61.7842,0
+59,56.0,2011-06-16,1st,3,West Indies,Sabina Park,run out,94,104,90.38,2153,2628,43.94,81.93,No,Run Out,Kingston,Kingston,Jamaica,West Indies,17.9986,-76.7829,0
+60,57.0,2011-09-03,1st,4,England,Riverside Ground,b S R Patel,55,73,75.34,2208,2701,44.16,81.75,No,Bowled,Chester-le-Street,County Durham,England,Europe,54.8583,-1.5755,1
+61,58.0,2011-09-06,1st,4,England,The Rose Bowl,c I R Bell b G P Swann,9,9,100.0,2217,2710,43.47,81.81,No,Caught,Southampton,Hampshire,England,Europe,50.9247,-1.3532,1
+62,59.0,2011-09-09,1st,4,England,Kennington Oval,c †C Kieswetter b J M Anderson,7,18,38.89,2224,2728,42.77,81.52,No,Caught,London,London,England,Europe,51.4839,-0.1149,1
+63,60.0,2011-09-11,1st,4,England,Lord's,c †C Kieswetter b G P Swann,16,36,44.44,2240,2764,42.26,81.04,No,Caught,London,London,England,Europe,51.5299,-0.172,1
+64,61.0,2011-09-16,1st,4,England,Sophia Gardens,hit wicket b G P Swann,107,93,115.05,2347,2857,43.46,82.15,No,Hit Wicket,Cardiff,Cardiff,Wales,Europe,51.4826,-3.1891,1
+65,62.0,2011-10-14,1st,4,England,Rajiv Gandhi International Stadium,c K P Pietersen b S R Patel,37,63,58.73,2384,2920,43.35,81.64,No,Caught,Hyderabad,Telangana,India,Asia,17.4065,78.5506,0
+66,63.0,2011-10-17,2nd,4,England,Arun Jaitley Stadium,not out,112,98,114.29,2496,3018,45.38,82.7,No,Not Out,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+67,64.0,2011-10-20,2nd,4,England,Punjab Cricket Association IS Bindra Stadium,lbw b G P Swann,35,30,116.67,2531,3048,45.2,83.04,No,LBW,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+68,65.0,2011-10-23,2nd,4,England,Wankhede Stadium,not out,86,99,86.87,2617,3147,46.73,83.16,No,Not Out,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+69,66.0,2011-10-25,1st,3,England,Eden Gardens,b S T Finn,0,5,0.0,2617,3152,45.91,83.03,No,Bowled,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+70,67.0,2011-11-29,2nd,4,West Indies,Barabati Stadium,b K A J Roach,3,6,50.0,2620,3158,45.17,82.96,No,Bowled,Cuttack,Odisha,India,Asia,20.4813,85.8798,0
+71,68.0,2011-12-02,2nd,4,West Indies,Dr YS Rajasekhara Reddy Cricket Stadium,c †D Ramdin b R Rampaul,117,123,95.12,2737,3281,46.39,83.42,No,Caught,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+72,69.0,2011-12-05,2nd,4,West Indies,Narendra Modi Stadium,lbw b S P Narine,20,30,66.67,2757,3311,45.95,83.27,No,LBW,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+73,70.0,2011-12-08,1st,6,West Indies,Holkar Cricket Stadium,not out,23,11,209.09,2780,3322,46.33,83.68,No,Not Out,Indore,Madhya Pradesh,India,Asia,22.7244,75.8796,0
+74,71.0,2011-12-11,1st,5,West Indies,MA Chidambaram Stadium,c M N Samuels b A Martin,80,85,94.12,2860,3407,46.89,83.94,No,Caught,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+75,72.0,2012-02-05,2nd,3,Australia,Melbourne Cricket Ground,c R T Ponting b C J McKay,31,34,91.18,2891,3441,46.63,84.02,No,Caught,Melbourne,Victoria,Australia,Oceania,-37.8199,144.9834,1
+76,73.0,2012-02-08,2nd,3,Sri Lanka,WACA Ground,run out,77,94,81.91,2968,3535,47.11,83.96,No,Run Out,Perth,Western Australia,Australia,Oceania,-31.9605,115.889,1
+77,74.0,2012-02-12,2nd,3,Australia,Adelaide Oval,c P J Forrest b C J McKay,18,28,64.29,2986,3563,46.66,83.81,No,Caught,Adelaide,South Australia,Australia,Oceania,-34.9154,138.596,1
+78,75.0,2012-02-14,2nd,3,Sri Lanka,Adelaide Oval,lbw b N L T C Perera,15,25,60.0,3001,3588,46.17,83.64,No,LBW,Adelaide,South Australia,Australia,Oceania,-34.9154,138.596,1
+79,76.0,2012-02-19,2nd,3,Australia,Brisbane Cricket Ground,c D J Hussey b B W Hilfenhaus,12,25,48.0,3013,3613,45.65,83.39,No,Caught,Brisbane,Queensland,Australia,Oceania,-27.4859,153.0381,1
+80,77.0,2012-02-21,2nd,4,Sri Lanka,Brisbane Cricket Ground,c K M D N Kulasekara b N L T C Perera,66,83,79.52,3079,3696,45.96,83.31,No,Caught,Brisbane,Queensland,Australia,Oceania,-27.4859,153.0381,1
+81,78.0,2012-02-26,2nd,4,Australia,Sydney Cricket Ground,c D T Christian b S R Watson,21,27,77.78,3100,3723,45.59,83.27,No,Caught,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+82,79.0,2012-02-28,2nd,4,Sri Lanka,Bellerive Oval,not out,133,86,154.65,3233,3809,47.54,84.88,No,Not Out,Hobart,Tasmania,Australia,Oceania,-42.8757,147.368,1
+83,80.0,2012-03-13,1st,3,Sri Lanka,Shere Bangla National Stadium,c H D R L Thirimanne b M F Maharoof,108,120,90.0,3341,3929,48.42,85.03,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+84,81.0,2012-03-16,1st,3,Bangladesh,Shere Bangla National Stadium,b Abdur Razzak,66,82,80.49,3407,4011,48.67,84.94,No,Bowled,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+85,82.0,2012-03-18,2nd,3,Pakistan,Shere Bangla National Stadium,c Mohammad Hafeez b Umar Gul,183,148,123.65,3590,4159,50.56,86.32,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+86,83.0,2012-07-21,1st,3,Sri Lanka,Mahinda Rajapaksha International Cricket Stadium,c sub b N L T C Perera,106,113,93.81,3696,4272,51.33,86.52,No,Caught,Hambantota,Southern Province,Sri Lanka,Asia,6.2844,81.125,0
+87,84.0,2012-07-24,1st,3,Sri Lanka,Mahinda Rajapaksha International Cricket Stadium,c †K C Sangakkara b N L T C Perera,1,5,20.0,3697,4277,50.64,86.44,No,Caught,Hambantota,Southern Province,Sri Lanka,Asia,6.2844,81.125,0
+88,85.0,2012-07-28,2nd,3,Sri Lanka,R Premadasa Stadium,c & b H M R K B Herath,38,65,58.46,3735,4342,50.47,86.02,No,Caught,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+89,86.0,2012-07-31,2nd,3,Sri Lanka,R Premadasa Stadium,not out,128,119,107.56,3863,4461,52.2,86.59,No,Not Out,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+90,87.0,2012-08-04,1st,3,Sri Lanka,Pallekele International Cricket Stadium,lbw b N Pradeep,23,35,65.71,3886,4496,51.81,86.43,No,LBW,Pallekele,Central Province,Sri Lanka,Asia,7.273,80.715,0
+91,88.0,2012-12-30,1st,3,Pakistan,MA Chidambaram Stadium,b Junaid Khan,0,5,0.0,3886,4501,51.13,86.34,No,Bowled,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+92,89.0,2013-01-03,2nd,3,Pakistan,Eden Gardens,c †Kamran Akmal b Junaid Khan,6,9,66.67,3892,4510,50.55,86.3,No,Caught,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+93,90.0,2013-01-06,1st,3,Pakistan,Arun Jaitley Stadium,c Younis Khan b Junaid Khan,7,17,41.18,3899,4527,49.99,86.13,No,Caught,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+94,91.0,2013-01-11,2nd,3,England,Saurashtra Cricket Association Stadium,c †C Kieswetter b T T Bresnan,15,22,68.18,3914,4549,49.54,86.04,No,Caught,Rajkot,Gujarat,India,Asia,22.2969,70.7764,0
+95,92.0,2013-01-15,1st,3,England,Nehru Stadium (Kochi),c I R Bell b C R Woakes,37,54,68.52,3951,4603,49.39,85.84,No,Caught,Kochi,Kerala,India,Asia,9.9816,76.2999,0
+96,93.0,2013-01-19,2nd,3,England,JSCA International Stadium Complex,not out,77,79,97.47,4028,4682,50.35,86.03,No,Not Out,Ranchi,Jharkhand,India,Asia,23.3147,85.2974,0
+97,94.0,2013-01-23,2nd,3,England,Punjab Cricket Association IS Bindra Stadium,c & b J C Tredwell,26,33,78.79,4054,4715,50.05,85.98,No,Caught,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+98,95.0,2013-01-27,1st,3,England,Himachal Pradesh Cricket Association Stadium,c J C Tredwell b T T Bresnan,0,1,0.0,4054,4716,49.44,85.96,No,Caught,Dharamshala,Himachal Pradesh,India,Asia,32.1942,76.3234,0
+99,96.0,2013-06-06,1st,3,South Africa,Sophia Gardens,c H M Amla b L L Tsotsobe,31,41,75.61,4085,4757,49.22,85.87,No,Caught,Cardiff,Cardiff,Wales,Europe,51.4826,-3.1891,1
+100,97.0,2013-06-11,2nd,3,West Indies,Kennington Oval,b S P Narine,22,18,122.22,4107,4775,48.89,86.01,No,Bowled,London,London,England,Europe,51.4839,-0.1149,1
+101,98.0,2013-06-15,2nd,3,Pakistan,Edgbaston,not out,22,27,81.48,4129,4802,49.15,85.99,No,Not Out,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+102,99.0,2013-06-20,2nd,3,Sri Lanka,Sophia Gardens,not out,58,64,90.63,4187,4866,49.85,86.05,No,Not Out,Cardiff,Cardiff,Wales,Europe,51.4826,-3.1891,1
+103,100.0,2013-06-23,1st,3,England,Edgbaston,c R S Bopara b J M Anderson,43,34,126.47,4230,4900,49.76,86.33,No,Caught,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+104,101.0,2013-06-30,1st,3,West Indies,Sabina Park,c C H Gayle b D J G Sammy,11,21,52.38,4241,4921,49.31,86.18,No,Caught,Kingston,Kingston,Jamaica,West Indies,17.9986,-76.7829,0
+105,102.0,2013-07-02,2nd,4,Sri Lanka,Sabina Park,c S L Malinga b A D Mathews,2,5,40.0,4243,4926,48.77,86.13,Yes,Caught,Kingston,Kingston,Jamaica,West Indies,17.9986,-76.7829,0
+106,103.0,2013-07-05,1st,3,West Indies,Queen's Park Oval,c D J G Sammy b D J Bravo,102,83,122.89,4345,5009,49.38,86.74,Yes,Caught,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+107,104.0,2013-07-09,1st,3,Sri Lanka,Queen's Park Oval,lbw b H M R K B Herath,31,52,59.62,4376,5061,49.17,86.47,Yes,LBW,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+108,105.0,2013-07-11,2nd,3,Sri Lanka,Queen's Park Oval,c †K C Sangakkara b R M S Eranga,2,5,40.0,4378,5066,48.64,86.42,No,Caught,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+109,106.0,2013-07-24,2nd,3,Zimbabwe,Harare Sports Club,c V Sibanda b P Utseya,115,108,106.48,4493,5174,49.37,86.84,Yes,Caught,Harare,Harare,Zimbabwe,Africa,-17.8294,31.0539,0
+110,107.0,2013-07-26,1st,3,Zimbabwe,Harare Sports Club,c M N Waller b K M Jarvis,14,18,77.78,4507,5192,48.99,86.81,Yes,Caught,Harare,Harare,Zimbabwe,Africa,-17.8294,31.0539,0
+111,108.0,2013-07-28,2nd,3,Zimbabwe,Harare Sports Club,not out,68,88,77.27,4575,5280,49.73,86.65,Yes,Not Out,Harare,Harare,Zimbabwe,Africa,-17.8294,31.0539,0
+112,,2013-08-01,2nd,0,Zimbabwe,Queens Sports Club,did not bat,0,0,0.0,4575,5280,49.73,86.65,Yes,Did Not Bat,Bulawayo,Bulawayo,Zimbabwe,Africa,-20.1483,28.5806,0
+113,,2013-08-03,2nd,0,Zimbabwe,Queens Sports Club,did not bat,0,0,0.0,4575,5280,49.73,86.65,Yes,Did Not Bat,Bulawayo,Bulawayo,Zimbabwe,Africa,-20.1483,28.5806,0
+114,109.0,2013-10-13,2nd,3,Australia,Maharashtra Cricket Association Stadium,lbw b S R Watson,61,85,71.76,4636,5365,49.85,86.41,No,LBW,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+115,110.0,2013-10-16,2nd,3,Australia,Sawai Mansingh Stadium,not out,100,52,192.31,4736,5417,50.92,87.43,No,Not Out,Jaipur,Rajasthan,India,Asia,26.894,75.8084,0
+116,111.0,2013-10-19,1st,3,Australia,Punjab Cricket Association IS Bindra Stadium,c †B J Haddin b G J Maxwell,68,73,93.15,4804,5490,51.11,87.5,No,Caught,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+117,,2013-10-23,2nd,0,Australia,JSCA International Stadium Complex,did not bat,0,0,0.0,4804,5490,51.11,87.5,No,Did Not Bat,Ranchi,Jharkhand,India,Asia,23.3147,85.2974,0
+118,112.0,2013-10-30,2nd,3,Australia,Vidarbha Cricket Association Stadium,not out,115,66,174.24,4919,5556,52.33,88.53,No,Not Out,Nagpur,Maharashtra,India,Asia,21.1613,79.0489,0
+119,113.0,2013-11-02,1st,3,Australia,M Chinnaswamy Stadium,run out,0,3,0.0,4919,5559,51.78,88.49,No,Run Out,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+120,114.0,2013-11-21,2nd,3,West Indies,Nehru Stadium (Kochi),c S P Narine b J O Holder,86,84,102.38,5005,5643,52.14,88.69,No,Caught,Kochi,Kerala,India,Asia,9.9816,76.2999,0
+121,115.0,2013-11-24,1st,3,West Indies,Dr YS Rajasekhara Reddy Cricket Stadium,c J O Holder b R Rampaul,99,100,99.0,5104,5743,52.62,88.87,No,Caught,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+122,116.0,2013-11-27,2nd,3,West Indies,Green Park,c †J Charles b R Rampaul,19,18,105.56,5123,5761,52.28,88.93,No,Caught,Kanpur,Uttar Pradesh,India,Asia,26.48,80.3467,0
+123,117.0,2013-12-05,2nd,3,South Africa,Wanderers Stadium,c J H Kallis b R McLaren,31,35,88.57,5154,5796,52.06,88.92,No,Caught,Johannesburg,Gauteng,South Africa,Africa,-26.131,28.0567,1
+124,118.0,2013-12-08,2nd,3,South Africa,Kingsmead,c †Q de Kock b L L Tsotsobe,0,5,0.0,5154,5801,51.54,88.85,No,Caught,Durban,KwaZulu-Natal,South Africa,Africa,-29.8587,31.0218,1
+125,,2013-12-11,N/A - No Result,0,South Africa,SuperSport Park,did not bat,0,0,0.0,5154,5801,51.54,88.85,No,Did Not Bat,Centurion,Gauteng,South Africa,Africa,-25.8596,28.195,1
+126,119.0,2014-01-19,2nd,3,New Zealand,McLean Park,c J D Ryder b M J McClenaghan,123,111,110.81,5277,5912,52.25,89.26,No,Caught,Napier,Hawke's Bay,New Zealand,Oceania,-39.4906,176.9185,1
+127,120.0,2014-01-22,2nd,3,New Zealand,Seddon Park,c sub b T G Southee,78,65,120.0,5355,5977,52.5,89.59,No,Caught,Hamilton,Waikato,New Zealand,Oceania,-37.787,175.2793,1
+128,121.0,2014-01-25,2nd,3,New Zealand,Eden Park,c †L Ronchi b H K Bennett,6,20,30.0,5361,5997,52.05,89.39,No,Caught,Auckland,Auckland,New Zealand,Oceania,-36.8748,174.7449,1
+129,122.0,2014-01-28,1st,2,New Zealand,Seddon Park,c J D S Neesham b T G Southee,2,10,20.0,5363,6007,51.57,89.28,No,Caught,Hamilton,Waikato,New Zealand,Oceania,-37.787,175.2793,1
+130,123.0,2014-01-31,2nd,3,New Zealand,Sky Stadium,c sub b N L McCullum,82,78,105.13,5445,6085,51.86,89.48,No,Caught,Wellington,Wellington,New Zealand,Oceania,-41.2726,174.7859,1
+131,124.0,2014-02-26,2nd,3,Bangladesh,Khan Shaheb Osman Ali Stadium,b Rubel Hossain,136,122,111.48,5581,6207,52.65,89.91,Yes,Bowled,Narayanganj,Narayanganj,Bangladesh,Asia,23.6206,90.4983,0
+132,125.0,2014-02-28,1st,3,Sri Lanka,Khan Shaheb Osman Ali Stadium,b B A W Mendis,48,51,94.12,5629,6258,52.61,89.95,Yes,Bowled,Narayanganj,Narayanganj,Bangladesh,Asia,23.6206,90.4983,0
+133,126.0,2014-03-01,1st,3,Pakistan,Shere Bangla National Stadium,c †Umar Akmal b Umar Gul,5,11,45.45,5634,6269,52.17,89.87,Yes,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+134,,2014-03-05,2nd,0,Afghanistan,Shere Bangla National Stadium,did not bat,0,0,0.0,5634,6269,52.17,89.87,Yes,Did Not Bat,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+135,127.0,2014-08-27,1st,3,England,Sophia Gardens,c A N Cook b C R Woakes,0,3,0.0,5634,6272,51.69,89.83,No,Caught,Cardiff,Cardiff,Wales,Europe,51.4826,-3.1891,1
+136,128.0,2014-08-30,2nd,3,England,Trent Bridge,c J C Tredwell b B A Stokes,40,50,80.0,5674,6322,51.58,89.75,No,Caught,Nottingham,Nottinghamshire,England,Europe,52.937,-1.132,1
+137,129.0,2014-09-02,2nd,3,England,Edgbaston,not out,1,3,33.33,5675,6325,51.59,89.72,No,Not Out,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+138,130.0,2014-09-05,2nd,3,England,Headingley,c A N Cook b J M Anderson,13,21,61.9,5688,6346,51.24,89.63,No,Caught,Leeds,West Yorkshire,England,Europe,53.8176,-1.5821,1
+139,131.0,2014-10-08,2nd,3,West Indies,Nehru Stadium (Kochi),c D J G Sammy b J E Taylor,2,5,40.0,5690,6351,50.8,89.59,No,Caught,Kochi,Kerala,India,Asia,9.9816,76.2999,0
+140,132.0,2014-10-11,1st,4,West Indies,Arun Jaitley Stadium,c M N Samuels b R Rampaul,62,78,79.49,5752,6429,50.9,89.47,No,Caught,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+141,133.0,2014-10-17,1st,3,West Indies,Himachal Pradesh Cricket Association Stadium,run out,127,114,111.4,5879,6543,51.57,89.85,No,Run Out,Dharamshala,Himachal Pradesh,India,Asia,32.1942,76.3234,0
+142,134.0,2014-11-02,1st,4,Sri Lanka,Barabati Stadium,c N L T C Perera b S Randiv,22,21,104.76,5901,6564,51.31,89.9,Yes,Caught,Cuttack,Odisha,India,Asia,20.4813,85.8798,0
+143,135.0,2014-11-06,2nd,4,Sri Lanka,Narendra Modi Stadium,c S Randiv b S Prasanna,49,44,111.36,5950,6608,51.29,90.04,Yes,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+144,136.0,2014-11-09,2nd,4,Sri Lanka,Rajiv Gandhi International Stadium,c P L S Gamage b T M Dilshan,53,61,86.89,6003,6669,51.31,90.01,Yes,Caught,Hyderabad,Telangana,India,Asia,17.4065,78.5506,0
+145,137.0,2014-11-13,1st,4,Sri Lanka,Eden Gardens,run out,66,64,103.13,6069,6733,51.43,90.14,Yes,Run Out,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+146,138.0,2014-11-16,2nd,4,Sri Lanka,JSCA International Stadium Complex,not out,139,126,110.32,6208,6859,52.61,90.51,Yes,Not Out,Ranchi,Jharkhand,India,Asia,23.3147,85.2974,0
+147,139.0,2015-01-18,1st,4,Australia,Melbourne Cricket Ground,c G J Bailey b J P Faulkner,9,16,56.25,6217,6875,52.24,90.43,No,Caught,Melbourne,Victoria,Australia,Oceania,-37.8199,144.9834,1
+148,140.0,2015-01-20,1st,4,England,Brisbane Cricket Ground,c †J C Buttler b S T Finn,4,8,50.0,6221,6883,51.84,90.38,No,Caught,Brisbane,Queensland,Australia,Oceania,-27.4859,153.0381,1
+149,141.0,2015-01-26,1st,4,Australia,Sydney Cricket Ground,not out,3,9,33.33,6224,6892,51.87,90.31,No,Not Out,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+150,142.0,2015-01-30,1st,3,England,WACA Ground,c J E Root b Moeen Ali,8,19,42.11,6232,6911,51.5,90.18,No,Caught,Perth,Western Australia,Australia,Oceania,-31.9605,115.889,1
+151,143.0,2015-02-15,1st,3,Pakistan,Adelaide Oval,c †Umar Akmal b Sohail Khan,107,126,84.92,6339,7037,51.96,90.08,No,Caught,Adelaide,South Australia,Australia,Oceania,-34.9154,138.596,1
+152,144.0,2015-02-22,1st,3,South Africa,Melbourne Cricket Ground,c F du Plessis b Imran Tahir,46,60,76.67,6385,7097,51.91,89.97,No,Caught,Melbourne,Victoria,Australia,Oceania,-37.8199,144.9834,1
+153,145.0,2015-02-28,2nd,3,United Arab Emirates,WACA Ground,not out,33,41,80.49,6418,7138,52.18,89.91,No,Not Out,Perth,Western Australia,Australia,Oceania,-31.9605,115.889,1
+154,146.0,2015-03-06,2nd,3,West Indies,WACA Ground,c M N Samuels b A D Russell,33,36,91.67,6451,7174,52.02,89.92,No,Caught,Perth,Western Australia,Australia,Oceania,-31.9605,115.889,1
+155,147.0,2015-03-10,2nd,3,Ireland,Seddon Park,not out,44,42,104.76,6495,7216,52.38,90.01,No,Not Out,Hamilton,Waikato,New Zealand,Oceania,-37.787,175.2793,1
+156,148.0,2015-03-14,2nd,3,Zimbabwe,Eden Park,b Sikandar Raza,38,48,79.17,6533,7264,52.26,89.94,No,Bowled,Auckland,Auckland,New Zealand,Oceania,-36.8748,174.7449,1
+157,149.0,2015-03-19,1st,3,Bangladesh,Melbourne Cricket Ground,c †Mushfiqur Rahim b Rubel Hossain,3,8,37.5,6536,7272,51.87,89.88,No,Caught,Melbourne,Victoria,Australia,Oceania,-37.8199,144.9834,1
+158,150.0,2015-03-26,2nd,3,Australia,Sydney Cricket Ground,c †B J Haddin b M G Johnson,1,13,7.69,6537,7285,51.47,89.73,No,Caught,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+159,151.0,2015-06-18,2nd,3,Bangladesh,Shere Bangla National Stadium,c †Mushfiqur Rahim b Taskin Ahmed,1,4,25.0,6538,7289,51.08,89.7,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+160,152.0,2015-06-21,1st,3,Bangladesh,Shere Bangla National Stadium,lbw b Nasir Hossain,23,27,85.19,6561,7316,50.86,89.68,No,LBW,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+161,153.0,2015-06-24,1st,3,Bangladesh,Shere Bangla National Stadium,b Shakib Al Hasan,25,35,71.43,6586,7351,50.66,89.59,No,Bowled,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+162,154.0,2015-10-11,2nd,4,South Africa,Green Park,c M Morkel b D W Steyn,11,18,61.11,6597,7369,50.36,89.52,No,Caught,Kanpur,Uttar Pradesh,India,Asia,26.48,80.3467,0
+163,155.0,2015-10-14,1st,4,South Africa,Holkar Cricket Stadium,run out,12,18,66.67,6609,7387,50.07,89.47,No,Run Out,Indore,Madhya Pradesh,India,Asia,22.7244,75.8796,0
+164,156.0,2015-10-18,2nd,3,South Africa,Saurashtra Cricket Association Stadium,c D A Miller b M Morkel,77,99,77.78,6686,7486,50.27,89.31,No,Caught,Rajkot,Gujarat,India,Asia,22.2969,70.7764,0
+165,157.0,2015-10-22,1st,3,South Africa,MA Chidambaram Stadium,c †Q de Kock b K Rabada,138,140,98.57,6824,7626,50.93,89.48,No,Caught,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+166,158.0,2015-10-25,2nd,3,South Africa,Wankhede Stadium,c †Q de Kock b K Rabada,7,6,116.67,6831,7632,50.6,89.5,No,Caught,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+167,159.0,2016-01-12,1st,3,Australia,WACA Ground,c A J Finch b J P Faulkner,91,97,93.81,6922,7729,50.9,89.56,No,Caught,Perth,Western Australia,Australia,Oceania,-31.9605,115.889,1
+168,160.0,2016-01-15,1st,3,Australia,Brisbane Cricket Ground,run out,59,67,88.06,6981,7796,50.96,89.55,No,Run Out,Brisbane,Queensland,Australia,Oceania,-27.4859,153.0381,1
+169,161.0,2016-01-17,1st,3,Australia,Melbourne Cricket Ground,c G J Bailey b J W Hastings,117,117,100.0,7098,7913,51.43,89.7,No,Caught,Melbourne,Victoria,Australia,Oceania,-37.8199,144.9834,1
+170,162.0,2016-01-20,2nd,3,Australia,Manuka Oval,c S P D Smith b K W Richardson,106,92,115.22,7204,8005,51.83,89.99,No,Caught,Canberra,ACT,Australia,Oceania,-35.32,149.14,1
+171,163.0,2016-01-23,2nd,3,Australia,Sydney Cricket Ground,c †M S Wade b J W Hastings,8,11,72.73,7212,8016,51.51,89.97,No,Caught,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+172,164.0,2016-10-16,2nd,3,New Zealand,Himachal Pradesh Cricket Association Stadium,not out,85,81,104.94,7297,8097,52.12,90.12,No,Not Out,Dharamshala,Himachal Pradesh,India,Asia,32.1942,76.3234,0
+173,165.0,2016-10-20,2nd,3,New Zealand,Arun Jaitley Stadium,c †L Ronchi b M J Santner,9,13,69.23,7306,8110,51.82,90.09,No,Caught,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+174,166.0,2016-10-23,2nd,3,New Zealand,Punjab Cricket Association IS Bindra Stadium,not out,154,134,114.93,7460,8244,52.91,90.49,No,Not Out,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+175,167.0,2016-10-26,2nd,3,New Zealand,JSCA International Stadium Complex,c †B J Watling b I S Sodhi,45,51,88.24,7505,8295,52.85,90.48,No,Caught,Ranchi,Jharkhand,India,Asia,23.3147,85.2974,0
+176,168.0,2016-10-29,1st,3,New Zealand,Dr YS Rajasekhara Reddy Cricket Stadium,c M J Guptill b I S Sodhi,65,76,85.53,7570,8371,52.94,90.43,No,Caught,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+177,169.0,2017-01-15,2nd,3,England,Maharashtra Cricket Association Stadium,c D J Willey b B A Stokes,122,105,116.19,7692,8476,53.42,90.75,Yes,Caught,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+178,170.0,2017-01-19,1st,3,England,Barabati Stadium,c B A Stokes b C R Woakes,8,5,160.0,7700,8481,53.1,90.79,Yes,Caught,Cuttack,Odisha,India,Asia,20.4813,85.8798,0
+179,171.0,2017-01-22,2nd,3,England,Eden Gardens,c †J C Buttler b B A Stokes,55,63,87.3,7755,8544,53.12,90.77,Yes,Caught,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+180,172.0,2017-06-04,1st,3,Pakistan,Edgbaston,not out,81,68,119.12,7836,8612,53.67,90.99,Yes,Not Out,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+181,173.0,2017-06-08,1st,3,Sri Lanka,Kennington Oval,c †N Dickwella b N Pradeep,0,5,0.0,7836,8617,53.31,90.94,Yes,Caught,London,London,England,Europe,51.4839,-0.1149,1
+182,174.0,2017-06-11,2nd,3,South Africa,Kennington Oval,not out,76,101,75.25,7912,8718,53.82,90.75,Yes,Not Out,London,London,England,Europe,51.4839,-0.1149,1
+183,175.0,2017-06-15,2nd,3,Bangladesh,Edgbaston,not out,96,78,123.08,8008,8796,54.48,91.04,Yes,Not Out,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+184,176.0,2017-06-18,2nd,3,Pakistan,Kennington Oval,c Shadab Khan b Mohammad Amir,5,9,55.56,8013,8805,54.14,91.01,Yes,Caught,London,London,England,Europe,51.4839,-0.1149,1
+185,177.0,2017-06-23,1st,3,West Indies,Queen's Park Oval,not out,32,47,68.09,8045,8852,54.36,90.88,Yes,Not Out,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+186,178.0,2017-06-25,1st,3,West Indies,Queen's Park Oval,c A R Nurse b A S Joseph,87,66,131.82,8132,8918,54.58,91.19,Yes,Caught,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+187,179.0,2017-06-30,1st,3,West Indies,Sir Vivian Richards Stadium,c K A Hope b J O Holder,11,22,50.0,8143,8940,54.29,91.09,Yes,Caught,North Sound,,Antigua and Barbuda,West Indies,17.1165,-61.7842,0
+188,180.0,2017-07-02,2nd,3,West Indies,Sir Vivian Richards Stadium,c †S D Hope b J O Holder,3,12,25.0,8146,8952,53.95,91.0,Yes,Caught,North Sound,,Antigua and Barbuda,West Indies,17.1165,-61.7842,0
+189,181.0,2017-07-06,2nd,3,West Indies,Sabina Park,not out,111,115,96.52,8257,9067,54.68,91.07,Yes,Not Out,Kingston,Kingston,Jamaica,West Indies,17.9986,-76.7829,0
+190,182.0,2017-08-20,2nd,3,Sri Lanka,Rangiri Dambulla International Stadium,not out,82,70,117.14,8339,9137,55.23,91.27,Yes,Not Out,Dambulla,Central Province,Sri Lanka,Asia,7.86,80.6736,0
+191,183.0,2017-08-24,2nd,5,Sri Lanka,Pallekele International Cricket Stadium,b M K P A Dananjaya,4,2,200.0,8343,9139,54.89,91.29,Yes,Bowled,Pallekele,Central Province,Sri Lanka,Asia,7.273,80.715,0
+192,184.0,2017-08-27,2nd,3,Sri Lanka,Pallekele International Cricket Stadium,c P V D Chameera b V Fernando,3,11,27.27,8346,9150,54.55,91.21,Yes,Caught,Pallekele,Central Province,Sri Lanka,Asia,7.273,80.715,0
+193,185.0,2017-08-31,1st,3,Sri Lanka,R Premadasa Stadium,c E M D Y Munaweera b S L Malinga,131,96,136.46,8477,9246,55.05,91.68,Yes,Caught,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+194,186.0,2017-09-03,2nd,3,Sri Lanka,R Premadasa Stadium,not out,110,116,94.83,8587,9362,55.76,91.72,Yes,Not Out,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+195,187.0,2017-09-17,1st,3,Australia,MA Chidambaram Stadium,c G J Maxwell b N M Coulter-Nile,0,4,0.0,8587,9366,55.4,91.68,Yes,Caught,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+196,188.0,2017-09-21,1st,3,Australia,Eden Gardens,b N M Coulter-Nile,92,107,85.98,8679,9473,55.63,91.62,Yes,Bowled,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+197,189.0,2017-09-24,2nd,3,Australia,Holkar Cricket Stadium,c A J Finch b A C Agar,28,35,80.0,8707,9508,55.46,91.58,Yes,Caught,Indore,Madhya Pradesh,India,Asia,22.7244,75.8796,0
+198,190.0,2017-09-28,2nd,3,Australia,M Chinnaswamy Stadium,b N M Coulter-Nile,21,21,100.0,8728,9529,55.24,91.59,Yes,Bowled,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+199,191.0,2017-10-01,2nd,3,Australia,Vidarbha Cricket Association Stadium,c M P Stoinis b A Zampa,39,55,70.91,8767,9584,55.14,91.48,Yes,Caught,Nagpur,Maharashtra,India,Asia,21.1613,79.0489,0
+200,192.0,2017-10-22,1st,3,New Zealand,Wankhede Stadium,c T A Boult b T G Southee,121,125,96.8,8888,9709,55.55,91.54,Yes,Caught,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+201,193.0,2017-10-25,2nd,3,New Zealand,Maharashtra Cricket Association Stadium,c †T W M Latham b C de Grandhomme,29,29,100.0,8917,9738,55.39,91.57,Yes,Caught,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+202,194.0,2017-10-29,1st,3,New Zealand,Green Park,c K S Williamson b T G Southee,113,106,106.6,9030,9844,55.74,91.73,Yes,Caught,Kanpur,Uttar Pradesh,India,Asia,26.48,80.3467,0
+203,195.0,2018-02-01,2nd,3,South Africa,Kingsmead,c K Rabada b A L Phehlukwayo,112,119,94.12,9142,9963,56.09,91.76,Yes,Caught,Durban,KwaZulu-Natal,South Africa,Africa,-29.8587,31.0218,1
+204,196.0,2018-02-04,2nd,3,South Africa,SuperSport Park,not out,46,50,92.0,9188,10013,56.37,91.76,Yes,Not Out,Centurion,Gauteng,South Africa,Africa,-25.8596,28.195,1
+205,197.0,2018-02-07,1st,3,South Africa,Newlands,not out,160,159,100.63,9348,10172,57.35,91.9,Yes,Not Out,Cape Town,Western Cape,South Africa,Africa,-33.9715,18.4689,1
+206,198.0,2018-02-10,1st,3,South Africa,Wanderers Stadium,c D A Miller b C H Morris,75,83,90.36,9423,10255,57.46,91.89,Yes,Caught,Johannesburg,Gauteng,South Africa,Africa,-26.131,28.0567,1
+207,199.0,2018-02-13,1st,3,South Africa,St George's Park,run out,36,54,66.67,9459,10309,57.33,91.75,Yes,Run Out,Gqeberha,Eastern Cape,South Africa,Africa,-33.9658,25.6022,1
+208,200.0,2018-02-16,2nd,3,South Africa,SuperSport Park,not out,129,96,134.38,9588,10405,58.11,92.15,Yes,Not Out,Centurion,Gauteng,South Africa,Africa,-25.8596,28.195,1
+209,201.0,2018-07-12,2nd,3,England,Trent Bridge,st J C Buttler b A U Rashid,75,82,91.46,9663,10487,58.21,92.14,Yes,Stumped,Nottingham,Nottinghamshire,England,Europe,52.937,-1.132,1
+210,202.0,2018-07-14,2nd,3,England,Lord's,lbw b Moeen Ali,45,56,80.36,9708,10543,58.13,92.08,Yes,LBW,London,London,England,Europe,51.5299,-0.172,1
+211,203.0,2018-07-17,1st,3,England,Headingley,b A U Rashid,71,72,98.61,9779,10615,58.21,92.12,Yes,Bowled,Leeds,West Yorkshire,England,Europe,53.8176,-1.5821,1
+212,204.0,2018-10-21,2nd,3,West Indies,Barsapara Cricket Stadium,st S D Hope b D Bishoo,140,107,130.84,9919,10722,58.69,92.51,Yes,Stumped,Guwahati,Assam,India,Asia,26.1634,91.7817,0
+213,205.0,2018-10-24,1st,3,West Indies,Dr YS Rajasekhara Reddy Cricket Stadium,not out,157,129,121.71,10076,10851,59.62,92.86,Yes,Not Out,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+214,206.0,2018-10-27,2nd,3,West Indies,Maharashtra Cricket Association Stadium,b M N Samuels,107,119,89.92,10183,10970,59.9,92.83,Yes,Bowled,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+215,207.0,2018-10-29,1st,3,West Indies,Brabourne Stadium,c †S D Hope b K A J Roach,16,17,94.12,10199,10987,59.64,92.83,Yes,Caught,Mumbai,Maharashtra,India,Asia,18.9389,72.8256,0
+216,208.0,2018-11-01,2nd,3,West Indies,Greenfield International Stadium,not out,33,29,113.79,10232,11016,59.84,92.88,Yes,Not Out,Thiruvananthapuram,Kerala,India,Asia,8.4015,76.9785,0
+217,209.0,2019-01-12,2nd,3,Australia,Sydney Cricket Ground,c M P Stoinis b J A Richardson,3,8,37.5,10235,11024,59.51,92.84,Yes,Caught,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+218,210.0,2019-01-15,2nd,3,Australia,Adelaide Oval,c G J Maxwell b J A Richardson,104,112,92.86,10339,11136,59.76,92.84,Yes,Caught,Adelaide,South Australia,Australia,Oceania,-34.9154,138.596,1
+219,211.0,2019-01-18,2nd,3,Australia,Melbourne Cricket Ground,c †A T Carey b J A Richardson,46,62,74.19,10385,11198,59.68,92.74,Yes,Caught,Melbourne,Victoria,Australia,Oceania,-37.8199,144.9834,1
+220,212.0,2019-01-23,2nd,3,New Zealand,McLean Park,c †T W M Latham b L H Ferguson,45,59,76.27,10430,11257,59.6,92.65,Yes,Caught,Napier,Hawke's Bay,New Zealand,Oceania,-39.4906,176.9185,1
+221,213.0,2019-01-26,1st,3,New Zealand,Bay Oval,c I S Sodhi b T A Boult,43,45,95.56,10473,11302,59.51,92.67,Yes,Caught,Mount Maunganui,Bay of Plenty,New Zealand,Oceania,-37.638,176.1816,1
+222,214.0,2019-01-28,2nd,3,New Zealand,Bay Oval,c H M Nicholls b T A Boult,60,74,81.08,10533,11376,59.51,92.59,Yes,Caught,Mount Maunganui,Bay of Plenty,New Zealand,Oceania,-37.638,176.1816,1
+223,215.0,2019-03-02,2nd,3,Australia,Rajiv Gandhi International Stadium,lbw b A Zampa,44,45,97.78,10577,11421,59.42,92.61,Yes,LBW,Hyderabad,Telangana,India,Asia,17.4065,78.5506,0
+224,216.0,2019-03-05,1st,3,Australia,Vidarbha Cricket Association Stadium,c M P Stoinis b P J Cummins,116,120,96.67,10693,11541,59.74,92.65,Yes,Caught,Nagpur,Maharashtra,India,Asia,21.1613,79.0489,0
+225,217.0,2019-03-08,2nd,3,Australia,JSCA International Stadium Complex,b A Zampa,123,95,129.47,10816,11636,60.09,92.95,Yes,Bowled,Ranchi,Jharkhand,India,Asia,23.3147,85.2974,0
+226,218.0,2019-03-10,1st,4,Australia,Punjab Cricket Association IS Bindra Stadium,c †A T Carey b J A Richardson,7,6,116.67,10823,11642,59.8,92.97,Yes,Caught,Mohali,Punjab,India,Asia,30.6906,76.7373,0
+227,219.0,2019-03-13,2nd,3,Australia,Arun Jaitley Stadium,c †A T Carey b M P Stoinis,20,22,90.91,10843,11664,59.58,92.96,Yes,Caught,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+228,220.0,2019-06-05,2nd,3,South Africa,The Rose Bowl,c †Q de Kock b A L Phehlukwayo,18,34,52.94,10861,11698,59.35,92.84,Yes,Caught,Southampton,Hampshire,England,Europe,50.9247,-1.3532,1
+229,221.0,2019-06-09,1st,3,Australia,Kennington Oval,c P J Cummins b M P Stoinis,82,77,106.49,10943,11775,59.47,92.93,Yes,Caught,London,London,England,Europe,51.4839,-0.1149,1
+230,222.0,2019-06-16,1st,3,Pakistan,Old Trafford,c †Sarfaraz Ahmed b Mohammad Amir,77,65,118.46,11020,11840,59.57,93.07,Yes,Caught,Manchester,Greater Manchester,England,Europe,53.4631,-2.2913,1
+231,223.0,2019-06-22,1st,3,Afghanistan,The Rose Bowl,c Rahmat Shah b Mohammad Nabi,67,63,106.35,11087,11903,59.61,93.14,Yes,Caught,Southampton,Hampshire,England,Europe,50.9247,-1.3532,1
+232,224.0,2019-06-27,1st,3,West Indies,Old Trafford,c sub b J O Holder,72,82,87.8,11159,11985,59.67,93.11,Yes,Caught,Manchester,Greater Manchester,England,Europe,53.4631,-2.2913,1
+233,225.0,2019-06-30,2nd,3,England,Edgbaston,c sub b L E Plunkett,66,76,86.84,11225,12061,59.71,93.07,Yes,Caught,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+234,226.0,2019-07-02,1st,3,Bangladesh,Edgbaston,c Rubel Hossain b Mustafizur Rahman,26,27,96.3,11251,12088,59.53,93.08,Yes,Caught,Birmingham,West Midlands,England,Europe,52.4557,-1.9025,1
+235,227.0,2019-07-06,2nd,3,Sri Lanka,Headingley,not out,34,41,82.93,11285,12129,59.71,93.04,Yes,Not Out,Leeds,West Yorkshire,England,Europe,53.8176,-1.5821,1
+236,228.0,2019-07-09,2nd,3,New Zealand,Old Trafford,lbw b T A Boult,1,6,16.67,11286,12135,59.4,93.0,Yes,LBW,Manchester,Greater Manchester,England,Europe,53.4631,-2.2913,1
+237,,2019-08-08,N/A - No Result,0,West Indies,Providence Stadium,did not bat,0,0,0.0,11286,12135,59.4,93.0,Yes,Did Not Bat,Providence,Demerara-Mahaica,Guyana,West Indies,6.8206,-58.1566,0
+238,229.0,2019-08-11,1st,3,West Indies,Queen's Park Oval,c K A J Roach b C R Brathwaite,120,125,96.0,11406,12260,59.72,93.03,Yes,Caught,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+239,230.0,2019-08-14,2nd,3,West Indies,Queen's Park Oval,not out,114,99,115.15,11520,12359,60.31,93.21,Yes,Not Out,Port of Spain,,Trinidad and Tobago,West Indies,10.6606,-61.5086,0
+240,231.0,2019-12-15,1st,3,West Indies,MA Chidambaram Stadium,b S S Cottrell,4,4,100.0,11524,12363,60.02,93.21,Yes,Bowled,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+241,232.0,2019-12-18,1st,3,West Indies,Dr YS Rajasekhara Reddy Cricket Stadium,c R L Chase b K A Pollard,0,1,0.0,11524,12364,59.71,93.21,Yes,Caught,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+242,233.0,2019-12-22,2nd,3,West Indies,Barabati Stadium,b K M A Paul,85,81,104.94,11609,12445,59.84,93.28,Yes,Bowled,Cuttack,Odisha,India,Asia,20.4813,85.8798,0
+243,234.0,2020-01-14,1st,4,Australia,Wankhede Stadium,c & b A Zampa,16,14,114.29,11625,12459,59.62,93.31,Yes,Caught,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+244,235.0,2020-01-17,1st,3,Australia,Saurashtra Cricket Association Stadium,c M A Starc b A Zampa,78,76,102.63,11703,12535,59.71,93.36,Yes,Caught,Rajkot,Gujarat,India,Asia,22.2969,70.7764,0
+245,236.0,2020-01-19,2nd,3,Australia,M Chinnaswamy Stadium,b J R Hazlewood,89,91,97.8,11792,12626,59.86,93.39,Yes,Bowled,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+246,237.0,2020-02-05,1st,3,New Zealand,Seddon Park,b I S Sodhi,51,63,80.95,11843,12689,59.81,93.33,Yes,Bowled,Hamilton,Waikato,New Zealand,Oceania,-37.787,175.2793,1
+247,238.0,2020-02-08,2nd,3,New Zealand,Eden Park,b T G Southee,15,25,60.0,11858,12714,59.59,93.27,Yes,Bowled,Auckland,Auckland,New Zealand,Oceania,-36.8748,174.7449,1
+248,239.0,2020-02-11,1st,3,New Zealand,Bay Oval,c K A Jamieson b H K Bennett,9,12,75.0,11867,12726,59.34,93.25,Yes,Caught,Mount Maunganui,Bay of Plenty,New Zealand,Oceania,-37.638,176.1816,1
+249,240.0,2020-11-27,2nd,3,Australia,Sydney Cricket Ground,c A J Finch b J R Hazlewood,21,21,100.0,11888,12747,59.14,93.26,Yes,Caught,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+250,241.0,2020-11-29,2nd,3,Australia,Sydney Cricket Ground,c M C Henriques b J R Hazlewood,89,87,102.3,11977,12834,59.29,93.32,Yes,Caught,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+251,242.0,2020-12-02,1st,3,Australia,Manuka Oval,c †A T Carey b J R Hazlewood,63,78,80.77,12040,12912,59.31,93.25,Yes,Caught,Canberra,ACT,Australia,Oceania,-35.32,149.14,1
+252,243.0,2021-03-23,1st,3,England,Maharashtra Cricket Association Stadium,c Moeen Ali b M A Wood,56,60,93.33,12096,12972,59.29,93.25,Yes,Caught,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+253,244.0,2021-03-26,1st,3,England,Maharashtra Cricket Association Stadium,c †J C Buttler b A U Rashid,66,79,83.54,12162,13051,59.33,93.19,Yes,Caught,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+254,245.0,2021-03-28,1st,3,England,Maharashtra Cricket Association Stadium,b Moeen Ali,7,10,70.0,12169,13061,59.07,93.17,Yes,Bowled,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+255,246.0,2022-01-19,2nd,3,South Africa,Boland Park,c T Bavuma b T Shamsi,51,63,80.95,12220,13124,59.03,93.11,No,Caught,Paarl,Western Cape,South Africa,Africa,-33.7256,18.9622,1
+256,247.0,2022-01-21,1st,3,South Africa,Boland Park,c T Bavuma b K A Maharaj,0,5,0.0,12220,13129,58.75,93.08,No,Caught,Paarl,Western Cape,South Africa,Africa,-33.7256,18.9622,1
+257,248.0,2022-01-23,2nd,3,South Africa,Newlands,c T Bavuma b K A Maharaj,65,84,77.38,12285,13213,58.78,92.98,No,Caught,Cape Town,Western Cape,South Africa,Africa,-33.9715,18.4689,1
+258,249.0,2022-02-06,2nd,3,West Indies,Narendra Modi Stadium,c K A J Roach b A S Joseph,8,4,200.0,12293,13217,58.54,93.01,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+259,250.0,2022-02-09,1st,3,West Indies,Narendra Modi Stadium,c †S D Hope b O F Smith,18,30,60.0,12311,13247,58.35,92.93,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+260,251.0,2022-02-11,1st,3,West Indies,Narendra Modi Stadium,c †S D Hope b A S Joseph,0,2,0.0,12311,13249,58.07,92.92,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+261,252.0,2022-07-14,2nd,3,England,Lord's,c †J C Buttler b D J Willey,16,25,64.0,12327,13274,57.87,92.87,No,Caught,London,London,England,Europe,51.5299,-0.172,1
+262,253.0,2022-07-17,2nd,3,England,Old Trafford,c †J C Buttler b R J W Topley,17,22,77.27,12344,13296,57.68,92.84,No,Caught,Manchester,Greater Manchester,England,Europe,53.4631,-2.2913,1
+263,254.0,2022-12-04,1st,3,Bangladesh,Shere Bangla National Stadium,c Litton Das b Shakib Al Hasan,9,15,60.0,12353,13311,57.46,92.8,No,Caught,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+264,255.0,2022-12-07,2nd,1,Bangladesh,Shere Bangla National Stadium,b Ebadat Hossain,5,6,83.33,12358,13317,57.21,92.8,No,Bowled,Mirpur,Dhaka,Bangladesh,Asia,23.8069,90.3636,0
+265,256.0,2022-12-10,1st,3,Bangladesh,Zahur Ahmed Chowdhury Stadium,c Mehidy Hasan Miraz b Shakib Al Hasan,113,91,124.18,12471,13408,57.47,93.01,No,Caught,Chattogram,Chattogram,Bangladesh,Asia,22.3645,91.806,0
+266,257.0,2023-01-10,1st,3,Sri Lanka,Barsapara Cricket Stadium,c †B K G Mendis b K Rajitha,113,87,129.89,12584,13495,57.72,93.25,No,Caught,Guwahati,Assam,India,Asia,26.1634,91.7817,0
+267,258.0,2023-01-12,2nd,3,Sri Lanka,Eden Gardens,b L Kumara,4,9,44.44,12588,13504,57.48,93.22,No,Bowled,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+268,259.0,2023-01-15,1st,3,Sri Lanka,Greenfield International Stadium,not out,166,110,150.91,12754,13614,58.24,93.68,No,Not Out,Thiruvananthapuram,Kerala,India,Asia,8.4015,76.9785,0
+269,260.0,2023-01-18,1st,3,New Zealand,Rajiv Gandhi International Stadium,b M J Santner,8,10,80.0,12762,13624,58.01,93.67,No,Bowled,Hyderabad,Telangana,India,Asia,17.4065,78.5506,0
+270,261.0,2023-01-21,2nd,3,New Zealand,Shaheed Veer Narayan Sing International Stadium,st T W M Latham b M J Santner,11,9,122.22,12773,13633,57.8,93.69,No,Stumped,Raipur,Chhattisgarh,India,Asia,21.1615,81.7837,0
+271,262.0,2023-01-24,1st,3,New Zealand,Holkar Cricket Stadium,c F H Allen b J A Duffy,36,27,133.33,12809,13660,57.7,93.77,No,Caught,Indore,Madhya Pradesh,India,Asia,22.7244,75.8796,0
+272,263.0,2023-03-17,2nd,3,Australia,Wankhede Stadium,lbw b M A Starc,4,9,44.44,12813,13669,57.46,93.74,No,LBW,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+273,264.0,2023-03-19,1st,3,Australia,Dr YS Rajasekhara Reddy Cricket Stadium,lbw b N Ellis,31,35,88.57,12844,13704,57.34,93.72,No,LBW,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
+274,265.0,2023-03-22,2nd,3,Australia,MA Chidambaram Stadium,c D A Warner b A C Agar,54,72,75.0,12898,13776,57.32,93.63,No,Caught,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+275,,2023-07-27,2nd,0,West Indies,Kensington Oval,did not bat,0,0,0.0,12898,13776,57.32,93.63,No,Did Not Bat,Bridgetown,Bridgetown,Barbados,West Indies,13.1022,-59.6167,0
+276,266.0,2023-09-02,1st,3,Pakistan,Pallekele International Cricket Stadium,b Shaheen Shah Afridi,4,7,57.14,12902,13783,57.09,93.61,No,Bowled,Pallekele,Central Province,Sri Lanka,Asia,7.273,80.715,0
+277,,2023-09-04,2nd,0,Nepal,Pallekele International Cricket Stadium,did not bat,0,0,0.0,12902,13783,57.09,93.61,No,Did Not Bat,Pallekele,Central Province,Sri Lanka,Asia,7.273,80.715,0
+278,267.0,2023-09-10,1st,3,Pakistan,R Premadasa Stadium,not out,122,94,129.79,13024,13877,57.63,93.85,No,Not Out,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+279,268.0,2023-09-12,1st,3,Sri Lanka,R Premadasa Stadium,c D Shanaka b D N Wellalage,3,12,25.0,13027,13889,57.39,93.79,No,Caught,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+280,,2023-09-17,2nd,0,Sri Lanka,R Premadasa Stadium,did not bat,0,0,0.0,13027,13889,57.39,93.79,No,Did Not Bat,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+281,269.0,2023-09-27,2nd,3,Australia,Saurashtra Cricket Association Stadium,c S P D Smith b G J Maxwell,56,61,91.8,13083,13950,57.38,93.78,No,Caught,Rajkot,Gujarat,India,Asia,22.2969,70.7764,0
+282,270.0,2023-10-08,2nd,3,Australia,MA Chidambaram Stadium,c M Labuschagne b J R Hazlewood,85,116,73.28,13168,14066,57.5,93.62,No,Caught,Chennai,Tamil Nadu,India,Asia,13.0623,80.2792,0
+283,271.0,2023-10-11,2nd,3,Afghanistan,Arun Jaitley Stadium,not out,55,56,98.21,13223,14122,57.74,93.63,No,Not Out,New Delhi,Delhi,India,Asia,28.6379,77.243,0
+284,272.0,2023-10-14,2nd,3,Pakistan,Narendra Modi Stadium,c Mohammad Nawaz b Hasan Ali,16,18,88.89,13239,14140,57.56,93.63,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+285,273.0,2023-10-19,2nd,3,Bangladesh,Maharashtra Cricket Association Stadium,not out,103,97,106.19,13342,14237,58.01,93.71,No,Not Out,Pune,Maharashtra,India,Asia,18.6738,73.7213,0
+286,274.0,2023-10-22,2nd,3,New Zealand,Himachal Pradesh Cricket Association Stadium,c G D Phillips b M J Henry,95,104,91.35,13437,14341,58.17,93.7,No,Caught,Dharamshala,Himachal Pradesh,India,Asia,32.1942,76.3234,0
+287,275.0,2023-10-29,1st,3,England,Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium,c B A Stokes b D J Willey,0,9,0.0,13437,14350,57.92,93.64,No,Caught,Lucknow,Uttar Pradesh,India,Asia,26.8467,80.948,0
+288,276.0,2023-11-02,1st,3,Sri Lanka,Wankhede Stadium,c P Nissanka b L D Madushanka,88,94,93.62,13525,14444,58.05,93.64,No,Caught,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+289,277.0,2023-11-05,1st,3,South Africa,Eden Gardens,not out,101,121,83.47,13626,14565,58.48,93.55,No,Not Out,Kolkata,West Bengal,India,Asia,22.5646,88.3433,0
+290,278.0,2023-11-12,1st,3,Netherlands,M Chinnaswamy Stadium,b R E van der Merwe,51,56,91.07,13677,14621,58.45,93.54,No,Bowled,Bengaluru,Karnataka,India,Asia,12.9788,77.5995,0
+291,279.0,2023-11-15,1st,3,New Zealand,Wankhede Stadium,c D P Conway b T G Southee,117,113,103.54,13794,14734,58.7,93.62,No,Caught,Mumbai,Maharashtra,India,Asia,18.9388,72.8258,0
+292,280.0,2023-11-19,1st,3,Australia,Narendra Modi Stadium,b P J Cummins,54,63,85.71,13848,14797,58.68,93.59,No,Bowled,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+293,281.0,2024-08-02,2nd,3,Sri Lanka,R Premadasa Stadium,lbw b Wanindu Hasaranga,24,32,75.0,13872,14829,58.53,93.55,No,LBW,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+294,282.0,2024-08-04,2nd,3,Sri Lanka,R Premadasa Stadium,lbw b J D F Vandersay,14,19,73.68,13886,14848,58.34,93.52,No,LBW,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+295,283.0,2024-08-07,2nd,3,Sri Lanka,R Premadasa Stadium,lbw b D N Wellalage,20,18,111.11,13906,14866,58.18,93.54,No,LBW,Colombo,Western Province,Sri Lanka,Asia,6.9322,79.8726,0
+296,284.0,2025-02-09,2nd,3,England,Barabati Stadium,c †P D Salt b A U Rashid,5,8,62.5,13911,14874,57.96,93.53,No,Caught,Cuttack,Odisha,India,Asia,20.4813,85.8798,0
+297,285.0,2025-02-12,1st,3,England,Narendra Modi Stadium,c †P D Salt b A U Rashid,52,55,94.55,13963,14929,57.94,93.53,No,Caught,Ahmedabad,Gujarat,India,Asia,23.0916,72.5976,0
+298,286.0,2025-02-20,2nd,3,Bangladesh,Dubai International Cricket Stadium,c Soumya Sarkar b Rishad Hossain,22,38,57.89,13985,14967,57.79,93.44,No,Caught,Dubai,Dubai,UAE,Asia,25.2433,55.3656,0
+299,287.0,2025-02-23,2nd,3,Pakistan,Dubai International Cricket Stadium,not out,100,111,90.09,14085,15078,58.2,93.41,No,Not Out,Dubai,Dubai,UAE,Asia,25.2433,55.3656,0
+300,288.0,2025-03-02,1st,3,New Zealand,Dubai International Cricket Stadium,c G D Phillips b M J Henry,11,14,78.57,14096,15092,58.01,93.4,No,Caught,Dubai,Dubai,UAE,Asia,25.2433,55.3656,0
+301,289.0,2025-03-04,2nd,3,Australia,Dubai International Cricket Stadium,c B J Dwarshuis b A Zampa,84,98,85.71,14180,15190,58.11,93.35,No,Caught,Dubai,Dubai,UAE,Asia,25.2433,55.3656,0
+302,290.0,2025-03-09,2nd,3,New Zealand,Dubai International Cricket Stadium,lbw b M G Bracewell,1,2,50.0,14181,15192,57.88,93.35,No,LBW,Dubai,Dubai,UAE,Asia,25.2433,55.3656,0
+303,291.0,2025-10-19,1st,3,Australia,Perth Stadium,c C Connolly b M A Starc,0,8,0.0,14181,15200,57.65,93.3,No,Caught,Perth,Western Australia,Australia,Oceania,-31.9505,115.8605,1
+304,292.0,2025-10-23,1st,3,Australia,Adelaide Oval,lbw b X C Bartlett,0,4,0.0,14181,15204,57.41,93.27,No,LBW,Adelaide,South Australia,Australia,Oceania,-34.9154,138.596,1
+305,293.0,2025-10-25,2nd,3,Australia,Sydney Cricket Ground,not out,74,81,91.36,14255,15285,57.71,93.26,No,Not Out,Sydney,New South Wales,Australia,Oceania,-33.8917,151.2247,1
+306,294.0,2025-11-30,1st,3,South Africa,JSCA International Stadium Complex,c R D Rickelton b N Burger,135,120,112.5,14390,15405,58.02,93.41,No,Caught,Ranchi,Jharkhand,India,Asia,23.3147,85.2974,0
+307,295.0,2025-12-03,1st,3,South Africa,Shaheed Veer Narayan Sing International Stadium,c A K Markram b L Ngidi,102,93,109.68,14492,15498,58.2,93.51,No,Caught,Raipur,Chhattisgarh,India,Asia,21.1615,81.7837,0
+308,296.0,2025-12-06,2nd,3,South Africa,Dr YS Rajasekhara Reddy Cricket Stadium,not out,65,45,144.44,14557,15543,58.46,93.66,No,Not Out,Visakhapatnam,Andhra Pradesh,India,Asia,17.7974,83.345,0
