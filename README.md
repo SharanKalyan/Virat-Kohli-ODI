@@ -42,7 +42,7 @@ r2 Score: 0.95 ; MAE: 7; RMSE: 10
 
 <img width="1187" height="696" alt="Preds-plot" src="https://github.com/user-attachments/assets/edd06441-f5b3-498d-9cf5-92998974a8af" />
 
-# Here's the prediction for NZL ODIs
+# Here's the prediction for upcomming NZL ODIs
 
 <img width="1256" height="485" alt="image" src="https://github.com/user-attachments/assets/5506628f-4960-4120-a558-8193f30ac7d4" />
 
