@@ -27,6 +27,7 @@ def add_bg_from_local(image_file):
     st.markdown(
         f"""
         <style>
+        /* App background */
         .stApp {{
             background-image: url("data:image/jpeg;base64,{encoded}");
             background-size: cover;
@@ -35,16 +36,43 @@ def add_bg_from_local(image_file):
             background-attachment: fixed;
         }}
 
-        /* Optional: improve text readability */
+        /* Main content container */
         section[data-testid="stMain"] {{
-            background-color: rgba(255, 255, 255, 0);
+            background-color: rgba(255, 255, 255, 0.88);
             padding: 2rem;
-            border-radius: 10px;
+            border-radius: 12px;
         }}
+
+        /* 🔑 FORCE TEXT COLOR TO BLACK */
+        html, body, [class*="css"], p, span, label, div {{
+            color: #000000 !important;
+        }}
+
+        /* Headers */
+        h1, h2, h3, h4, h5, h6 {{
+            color: #000000 !important;
+        }}
+
+        /* Input fields */
+        input, textarea {{
+            color: #000000 !important;
+        }}
+
+        /* Selectbox */
+        div[data-baseweb="select"] span {{
+            color: #000000 !important;
+        }}
+
+        /* Expander text */
+        details summary {{
+            color: #000000 !important;
+        }}
+
         </style>
         """,
         unsafe_allow_html=True
     )
+
 
 add_bg_from_local("vk.jpg")
 
