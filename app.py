@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 from pathlib import Path
+import base64
 
 # --------------------------------------------------
 # IMPORTANT: preprocessing import (pickle dependency)
@@ -17,6 +18,37 @@ st.set_page_config(
 )
 
 # --------------------------------------------------
+# Background Image
+# --------------------------------------------------
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as f:
+        encoded = base64.b64encode(f.read()).decode()
+
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/jpeg;base64,{encoded}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }}
+
+        /* Optional: improve text readability */
+        section[data-testid="stMain"] {{
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 2rem;
+            border-radius: 10px;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+add_bg_from_local("vk.jpg")
+
+# --------------------------------------------------
 # Title & Intro
 # --------------------------------------------------
 st.title("🏏 Virat Kohli – ODI Runs Prediction")
@@ -28,9 +60,6 @@ st.markdown(
 
     🔗 **ML pipeline, preprocessing & training code:**  
     [GitHub Repository](https://github.com/SharanKalyan)
-    
-    🔗 **Tableau Public Dashboard:**  
-    [Tableau Dashboard](https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes)
     """
 )
 
@@ -93,19 +122,16 @@ with st.form("prediction_form"):
 
 if submitted:
     try:
-        X_input = pd.DataFrame(
-            [{
-                "Date": date,
-                "M/Inns": innings,
-                "Captain": captain,
-                "Country": country,
-                "Versus": versus,
-                "B/F": int(balls_faced),
-                "SENA": 1 if sena == "Yes" else 0
-            }]
-        )
+        X_input = pd.DataFrame([{
+            "Date": date,
+            "M/Inns": innings,
+            "Captain": captain,
+            "Country": country,
+            "Versus": versus,
+            "B/F": int(balls_faced),
+            "SENA": 1 if sena == "Yes" else 0
+        }])
 
-        # 🔒 SAFETY: always pass a DataFrame copy
         prediction = pipeline.predict(X_input.copy())[0]
 
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
@@ -121,7 +147,6 @@ st.header("📂 Batch Prediction (CSV Upload)")
 
 st.info("Upload a CSV with the same schema used during training.")
 
-# Sample CSV
 sample_df = pd.DataFrame({
     "Date": ["01/15/2023", "07/20/2022"],
     "M/Inns": ["1st", "2nd"],
@@ -152,8 +177,7 @@ if uploaded_file:
             st.error(f"❌ Missing columns: {missing_cols}")
             st.stop()
 
-        df = df.copy()  # 🔒 SAFETY
-
+        df = df.copy()
         df["Predicted_Runs"] = pipeline.predict(df)
 
         st.dataframe(df)
