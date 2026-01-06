@@ -28,6 +28,9 @@ st.markdown(
 
     🔗 **Complete ML pipeline, preprocessing & model code:**  
     [GitHub Repository](https://github.com/SharanKalyan)
+
+    🔗 **Tableau Public Dashboard:**  
+    [Tableau Dashboard](https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes)
     """
 )
 
