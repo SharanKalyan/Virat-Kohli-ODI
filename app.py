@@ -37,7 +37,7 @@ def add_bg_from_local(image_file):
 
         /* Optional: improve text readability */
         section[data-testid="stMain"] {{
-            background-color: rgba(255, 255, 255, 0.85);
+            background-color: rgba(255, 255, 255, 0);
             padding: 2rem;
             border-radius: 10px;
         }}
