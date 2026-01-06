@@ -8,35 +8,26 @@ An interactive dashboard showcasing key insights and performance trends:
 https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes
 
 # Project Structure & Workflow
-1. Cleaning-Virat-Kohli-ODI.ipynb
+### 1. Cleaning-Virat-Kohli-ODI.ipynb
 
 This notebook contains the complete data-cleaning pipeline.
 The primary challenge was resolving inconsistencies across multiple columns. For example, the Runs column was stored as a string due to special characters such as *, which indicate not-out innings. Additional issues included missing values, inconsistent formats, and noisy data.
-
 Another significant challenge was identifying and standardizing the geographical locations of cricket grounds. After addressing these issues, the cleaned and structured dataset was saved for downstream analysis.
 
-2. Analysis-Virat-Kohli-ODI.ipynb
+### 2. Analysis-Virat-Kohli-ODI.ipynb
 
 This notebook focuses on exploratory data analysis (EDA) and visualization. Most insights were derived and validated using the Tableau dashboard. Through this analysis, I identified:
-
 Performance patterns against different oppositions
-
 Strengths and weaknesses under varying conditions
-
 Situational trends where performance peaks or declines
-
 The finalized analytical dataset was then prepared and forwarded for machine learning modeling.
 
-3. Regression-Virat-Kohli-ODI.ipynb
+### 3. Regression-Virat-Kohli-ODI.ipynb
 
 This notebook implements the machine learning pipeline, including:
-
 Data preprocessing and feature engineering
-
 Model training and validation
-
 Regression-based run prediction
-
 Performance evaluation of the trained models
 
 The goal of this stage is to estimate the number of runs Virat Kohli is likely to score in future ODI matches based on historical and contextual parameters.
