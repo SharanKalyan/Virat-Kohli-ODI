@@ -4,9 +4,9 @@ import joblib
 from pathlib import Path
 
 # --------------------------------------------------
-# IMPORTANT: Import preprocessing function
+# IMPORTANT: preprocessing import (pickle dependency)
 # --------------------------------------------------
-from preprocessing import map_columns  # must exist for pickle load
+from preprocessing import map_columns  # DO NOT REMOVE
 
 # --------------------------------------------------
 # Page Config
@@ -23,12 +23,12 @@ st.title("🏏 Virat Kohli – ODI Runs Prediction")
 
 st.markdown(
     """
-    This application predicts **runs scored by Virat Kohli in an ODI innings**
-    using historical match context and conditions.
+    Predict **runs scored by Virat Kohli in an ODI innings**  
+    using historical match conditions and context.
 
-    🔗 **Complete ML pipeline, preprocessing & model code:**  
+    🔗 **ML pipeline, preprocessing & training code:**  
     [GitHub Repository](https://github.com/SharanKalyan)
-
+    
     🔗 **Tableau Public Dashboard:**  
     [Tableau Dashboard](https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes)
     """
@@ -39,37 +39,36 @@ st.info("🔒 Demo ML application. No data is stored.")
 st.markdown("---")
 
 # --------------------------------------------------
+# Load Pipeline
+# --------------------------------------------------
+@st.cache_resource
+def load_pipeline(path: Path):
+    return joblib.load(path)
+
+MODEL_PATH = Path("kohli_odi_pipeline.pkl")
+
+if not MODEL_PATH.exists():
+    st.error("❌ Model pipeline file not found.")
+    st.stop()
+
+pipeline = load_pipeline(MODEL_PATH)
+
+# --------------------------------------------------
 # Model Overview
 # --------------------------------------------------
 with st.expander("ℹ️ Model Overview"):
     st.markdown(
         """
         **Model:** Linear Regression  
-        **Pipeline Includes:**
-        - Date feature engineering (Month, Year)
-        - Match context encoding
-        - Custom preprocessing via sklearn Pipeline
-        - End-to-end inference safety
+        **Pipeline includes:**
+        - Date feature engineering
+        - Custom preprocessing via `FunctionTransformer`
+        - Ordinal encoding
+        - End-to-end sklearn Pipeline
 
-        **Use Case:**  
-        Analytical & educational exploration of ODI batting performance.
+        **Use case:** Analytical & educational ODI performance modeling
         """
     )
-
-# --------------------------------------------------
-# Load Pipeline
-# --------------------------------------------------
-@st.cache_resource
-def load_pipeline(path):
-    return joblib.load(path)
-
-model_path = Path("kohli_odi_pipeline.pkl")
-
-if not model_path.exists():
-    st.error("❌ Model pipeline file not found.")
-    st.stop()
-
-pipeline = load_pipeline(model_path)
 
 # --------------------------------------------------
 # Single Prediction
@@ -80,33 +79,34 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        date = st.text_input("Match Date (MM/DD/YYYY)", value="01/15/2023")
+        date = st.text_input("Match Date (MM/DD/YYYY)", "01/15/2023")
         innings = st.selectbox("Innings", ["1st", "2nd", "N/A - No Result"])
         captain = st.selectbox("Captain?", ["Yes", "No"])
-        balls_faced = st.number_input(
-            "Balls Faced (B/F)", min_value=0, value=60, step=1
-        )
+        balls_faced = st.number_input("Balls Faced (B/F)", min_value=0, value=60)
 
     with col2:
-        country = st.text_input("Match Country", value="India")
-        versus = st.text_input("Opponent", value="Australia")
+        country = st.text_input("Match Country", "India")
+        versus = st.text_input("Opponent", "Australia")
         sena = st.selectbox("SENA Match?", ["Yes", "No"])
 
     submitted = st.form_submit_button("Predict Runs")
 
 if submitted:
     try:
-        X_input = pd.DataFrame([{
-            "Date": date,
-            "M/Inns": innings,
-            "Captain": captain,
-            "Country": country,
-            "Versus": versus,
-            "B/F": balls_faced,
-            "SENA": 1 if sena == "Yes" else 0
-        }])
+        X_input = pd.DataFrame(
+            [{
+                "Date": date,
+                "M/Inns": innings,
+                "Captain": captain,
+                "Country": country,
+                "Versus": versus,
+                "B/F": int(balls_faced),
+                "SENA": 1 if sena == "Yes" else 0
+            }]
+        )
 
-        prediction = pipeline.predict(X_input)[0]
+        # 🔒 SAFETY: always pass a DataFrame copy
+        prediction = pipeline.predict(X_input.copy())[0]
 
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
 
@@ -119,9 +119,7 @@ if submitted:
 st.markdown("---")
 st.header("📂 Batch Prediction (CSV Upload)")
 
-st.info(
-    "Upload a CSV file with the same schema to predict runs for multiple matches."
-)
+st.info("Upload a CSV with the same schema used during training.")
 
 # Sample CSV
 sample_df = pd.DataFrame({
@@ -153,6 +151,8 @@ if uploaded_file:
         if missing_cols:
             st.error(f"❌ Missing columns: {missing_cols}")
             st.stop()
+
+        df = df.copy()  # 🔒 SAFETY
 
         df["Predicted_Runs"] = pipeline.predict(df)
 
