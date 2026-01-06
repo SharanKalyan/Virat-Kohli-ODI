@@ -7,7 +7,8 @@ This project focuses on an in-depth analysis of One Day International (ODI) matc
 An interactive dashboard showcasing key insights and performance trends:
 https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes
 
-# Model deployed on Streamlit: https://virat-kohli-odi-predictions.streamlit.app/
+# Model deployed on Streamlit: 
+https://virat-kohli-odi-predictions.streamlit.app/
 
 # Project Structure & Workflow
 ### 1. Cleaning-Virat-Kohli-ODI.ipynb
