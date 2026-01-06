@@ -22,13 +22,14 @@ Strengths and weaknesses under varying conditions
 Situational trends where performance peaks or declines
 The finalized analytical dataset was then prepared and forwarded for machine learning modeling.
 
-### 3. Regression-Virat-Kohli-ODI.ipynb
+### 3. RegressionPipeline-Virat-Kohli-ODI.ipynb
 
 This notebook implements the machine learning pipeline, including:
-Data preprocessing and feature engineering
-Model training and validation
+Data preprocessing and feature engineering pipelines
+Model training and validation pipeline
 Regression-based run prediction
 Performance evaluation of the trained models
+Saving trained model
 
 The goal of this stage is to estimate the number of runs Virat Kohli is likely to score in future ODI matches based on historical and contextual parameters.
 
