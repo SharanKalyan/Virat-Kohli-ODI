@@ -4,7 +4,6 @@ import joblib
 from pathlib import Path
 from preprocessing import map_columns
 
-
 # --------------------------------------------------
 # Page Config
 # --------------------------------------------------
@@ -20,16 +19,15 @@ st.title("🏏 Virat Kohli – ODI Runs Prediction")
 
 st.markdown(
     """
-    This application predicts **runs scored by Virat Kohli in an ODI innings**
+    Predict **runs scored by Virat Kohli in an ODI innings**
     using historical match context and conditions.
 
-    🔗 **Full ML pipeline, preprocessing, and model code:**  
-    [GitHub Repository](https://github.com/SharanKalyan)
+    🔗 **Full ML pipeline & source code:**  
+    https://github.com/SharanKalyan
     """
 )
 
-st.info("🔒 This is a demo ML application. No data is stored.")
-
+st.info("🔒 Demo ML application. No data is stored.")
 st.markdown("---")
 
 # --------------------------------------------------
@@ -45,8 +43,7 @@ with st.expander("ℹ️ Model Overview"):
         - Categorical encoders
         - End-to-end sklearn Pipeline
 
-        **Use Case:**  
-        Educational & analytical exploration of ODI batting patterns.
+        **Purpose:** Educational & analytical exploration.
         """
     )
 
@@ -77,10 +74,12 @@ with st.form("prediction_form"):
         date = st.text_input("Match Date (MM/DD/YYYY)", value="01/15/2023")
         innings = st.selectbox("Innings", ["1st", "2nd", "N/A - No Result"])
         captain = st.selectbox("Captain?", ["Yes", "No"])
+        bf = st.selectbox("Batting / Fielding", ["Batting", "Fielding"])
 
     with col2:
         country = st.text_input("Match Country", value="India")
         versus = st.text_input("Opponent", value="Australia")
+        sena = st.selectbox("SENA Match?", ["Yes", "No"])
 
     submitted = st.form_submit_button("Predict Runs")
 
@@ -91,11 +90,12 @@ if submitted:
             "M/Inns": innings,
             "Captain": captain,
             "Country": country,
-            "Versus": versus
+            "Versus": versus,
+            "B/F": bf,
+            "SENA": sena
         }])
 
         prediction = pipeline.predict(X_input)[0]
-
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
 
     except Exception as e:
@@ -108,7 +108,8 @@ st.markdown("---")
 st.header("📂 Batch Prediction (CSV Upload)")
 
 st.info(
-    "Upload a CSV file with the same feature structure to predict runs for multiple matches."
+    "Upload a CSV file with the same feature structure "
+    "to predict runs for multiple matches."
 )
 
 # Sample CSV
@@ -117,7 +118,9 @@ sample_df = pd.DataFrame({
     "M/Inns": ["1st", "2nd"],
     "Captain": ["Yes", "No"],
     "Country": ["India", "England"],
-    "Versus": ["Australia", "Pakistan"]
+    "Versus": ["Australia", "Pakistan"],
+    "B/F": ["Batting", "Fielding"],
+    "SENA": ["No", "Yes"]
 })
 
 st.download_button(
