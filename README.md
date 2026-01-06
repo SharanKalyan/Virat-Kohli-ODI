@@ -5,9 +5,9 @@ This Project focusses on the analysis of the ODI matches Virat has played. The r
 Tableau Public Dashboard: https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes
 
 # Results of Predictions
-<img width="1023" height="371" alt="image" src="https://github.com/user-attachments/assets/dee804e3-0904-464c-baad-4f7ca49c2515" />
+<img width="860" height="360" alt="Predictions" src="https://github.com/user-attachments/assets/6e22f0b2-0b4e-47ef-8c41-da33a0ff77ac" />
 
 # Metrics
 r2 Score: 0.95 
-MAE: 8.02
-RMSE: 10.37
+MAE: 8
+RMSE: 10
