@@ -2,7 +2,11 @@ import streamlit as st
 import pandas as pd
 import joblib
 from pathlib import Path
-from preprocessing import map_columns
+
+# --------------------------------------------------
+# IMPORTANT: Import preprocessing function
+# --------------------------------------------------
+from preprocessing import map_columns  # must exist for pickle load
 
 # --------------------------------------------------
 # Page Config
@@ -19,15 +23,16 @@ st.title("🏏 Virat Kohli – ODI Runs Prediction")
 
 st.markdown(
     """
-    Predict **runs scored by Virat Kohli in an ODI innings**
+    This application predicts **runs scored by Virat Kohli in an ODI innings**
     using historical match context and conditions.
 
-    🔗 **Full ML pipeline & source code:**  
-    https://github.com/SharanKalyan
+    🔗 **Complete ML pipeline, preprocessing & model code:**  
+    [GitHub Repository](https://github.com/SharanKalyan)
     """
 )
 
 st.info("🔒 Demo ML application. No data is stored.")
+
 st.markdown("---")
 
 # --------------------------------------------------
@@ -40,10 +45,11 @@ with st.expander("ℹ️ Model Overview"):
         **Pipeline Includes:**
         - Date feature engineering (Month, Year)
         - Match context encoding
-        - Categorical encoders
-        - End-to-end sklearn Pipeline
+        - Custom preprocessing via sklearn Pipeline
+        - End-to-end inference safety
 
-        **Purpose:** Educational & analytical exploration.
+        **Use Case:**  
+        Analytical & educational exploration of ODI batting performance.
         """
     )
 
@@ -74,7 +80,9 @@ with st.form("prediction_form"):
         date = st.text_input("Match Date (MM/DD/YYYY)", value="01/15/2023")
         innings = st.selectbox("Innings", ["1st", "2nd", "N/A - No Result"])
         captain = st.selectbox("Captain?", ["Yes", "No"])
-        bf = st.selectbox("Batting / Fielding", ["Batting", "Fielding"])
+        balls_faced = st.number_input(
+            "Balls Faced (B/F)", min_value=0, value=60, step=1
+        )
 
     with col2:
         country = st.text_input("Match Country", value="India")
@@ -91,11 +99,12 @@ if submitted:
             "Captain": captain,
             "Country": country,
             "Versus": versus,
-            "B/F": bf,
-            "SENA": sena
+            "B/F": balls_faced,
+            "SENA": 1 if sena == "Yes" else 0
         }])
 
         prediction = pipeline.predict(X_input)[0]
+
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
 
     except Exception as e:
@@ -108,8 +117,7 @@ st.markdown("---")
 st.header("📂 Batch Prediction (CSV Upload)")
 
 st.info(
-    "Upload a CSV file with the same feature structure "
-    "to predict runs for multiple matches."
+    "Upload a CSV file with the same schema to predict runs for multiple matches."
 )
 
 # Sample CSV
@@ -119,8 +127,8 @@ sample_df = pd.DataFrame({
     "Captain": ["Yes", "No"],
     "Country": ["India", "England"],
     "Versus": ["Australia", "Pakistan"],
-    "B/F": ["Batting", "Fielding"],
-    "SENA": ["No", "Yes"]
+    "B/F": [75, 48],
+    "SENA": [0, 1]
 })
 
 st.download_button(
