@@ -38,7 +38,7 @@ def add_bg_from_local(image_file):
 
         /* Main content container */
         section[data-testid="stMain"] {{
-            background-color: rgba(255, 255, 255, 0.88);
+            background-color: rgba(255, 255, 255, 0);
             padding: 2rem;
             border-radius: 12px;
         }}
