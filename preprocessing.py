@@ -4,11 +4,7 @@ def map_columns(ml):
     df = ml.copy()
 
     # Enforce MM/DD/YYYY
-    df['Date'] = pd.to_datetime(
-        df['Date'],
-        format='%m/%d/%Y',
-        errors='coerce'
-    )
+    df['Date'] = pd.to_datetime(df['Date'])
 
     df['Month'] = df['Date'].dt.month
     df['Year'] = df['Date'].dt.year
