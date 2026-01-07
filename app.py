@@ -145,7 +145,7 @@ if submitted:
         X_input["Date"] = pd.to_datetime(X_input["Date"], errors="coerce")
 
         # 🔑 SAFE scalar extraction
-        prediction = float(pipeline.predict(X_input).ravel()[0])
+        prediction = int(pipeline.predict(X_input).ravel()[0])
 
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
 
@@ -183,7 +183,7 @@ if uploaded_file:
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
         # 🔑 SAFE batch prediction
-        df["Predicted_Runs"] = pipeline.predict(df).astype(float)
+        df["Predicted_Runs"] = pipeline.predict(df).astype('int64')
 
         st.dataframe(df)
 
