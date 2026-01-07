@@ -42,23 +42,23 @@ def add_bg_from_local(image_file):
         }}
 
         html, body, [class*="css"], p, span, label, div {{
-            color: #121212 !important;
+            color: #FFFFFF !important;
         }}
 
         h1, h2, h3, h4, h5, h6 {{
-            color: #121212 !important;
+            color: #FFFFFF !important;
         }}
 
         input, textarea {{
-            color: #121212 !important;
+            color: #FFFFFF !important;
         }}
 
         div[data-baseweb="select"] span {{
-            color: #121212 !important;
+            color: #FFFFFF !important;
         }}
 
         details summary {{
-            color: #121212 !important;
+            color: #FFFFFF !important;
         }}
         </style>
         """,
