@@ -27,7 +27,6 @@ def add_bg_from_local(image_file):
     st.markdown(
         f"""
         <style>
-        /* App background */
         .stApp {{
             background-image: url("data:image/jpeg;base64,{encoded}");
             background-size: cover;
@@ -36,43 +35,35 @@ def add_bg_from_local(image_file):
             background-attachment: fixed;
         }}
 
-        /* Main content container */
         section[data-testid="stMain"] {{
             background-color: rgba(255, 255, 255, 0);
             padding: 2rem;
             border-radius: 12px;
         }}
 
-        /* 🔑 FORCE TEXT COLOR TO BLACK */
         html, body, [class*="css"], p, span, label, div {{
             color: #000000 !important;
         }}
 
-        /* Headers */
         h1, h2, h3, h4, h5, h6 {{
             color: #000000 !important;
         }}
 
-        /* Input fields */
         input, textarea {{
             color: #000000 !important;
         }}
 
-        /* Selectbox */
         div[data-baseweb="select"] span {{
             color: #000000 !important;
         }}
 
-        /* Expander text */
         details summary {{
             color: #000000 !important;
         }}
-
         </style>
         """,
         unsafe_allow_html=True
     )
-
 
 add_bg_from_local("vk.jpg")
 
@@ -85,9 +76,6 @@ st.markdown(
     """
     Predict **runs scored by Virat Kohli in an ODI innings**  
     using historical match conditions and context.
-
-    🔗 **ML pipeline, preprocessing & training code:**  
-    [GitHub Repository](https://github.com/SharanKalyan)
     """
 )
 
@@ -96,19 +84,15 @@ st.info("🔒 Demo ML application. No data is stored.")
 st.markdown("---")
 
 # --------------------------------------------------
-# Load Pipeline
+# Load Pipeline (NO CACHE — IMPORTANT)
 # --------------------------------------------------
-@st.cache_resource
-def load_pipeline(path: Path):
-    return joblib.load(path)
-
-MODEL_PATH = Path("final_pipeline.pkl")
+MODEL_PATH = Path("kohli_odi_pipeline.pkl")
 
 if not MODEL_PATH.exists():
     st.error("❌ Model pipeline file not found.")
     st.stop()
 
-pipeline = load_pipeline(MODEL_PATH)
+pipeline = joblib.load(MODEL_PATH)
 
 # --------------------------------------------------
 # Model Overview
@@ -118,12 +102,9 @@ with st.expander("ℹ️ Model Overview"):
         """
         **Model:** Linear Regression  
         **Pipeline includes:**
-        - Date feature engineering
-        - Custom preprocessing via `FunctionTransformer`
-        - Ordinal encoding
-        - End-to-end sklearn Pipeline
-
-        **Use case:** Analytical & educational ODI performance modeling
+        - Custom column mapping (`FunctionTransformer`)
+        - Ordinal encoding for categorical variables
+        - ColumnTransformer with explicit columns
         """
     )
 
@@ -160,7 +141,10 @@ if submitted:
             "SENA": 1 if sena == "Yes" else 0
         }])
 
-        prediction = pipeline.predict(X_input.copy())[0]
+        # Defensive conversion
+        X_input["Date"] = pd.to_datetime(X_input["Date"], errors="coerce")
+
+        prediction = pipeline.predict(X_input)[0]
 
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
 
@@ -172,8 +156,6 @@ if submitted:
 # --------------------------------------------------
 st.markdown("---")
 st.header("📂 Batch Prediction (CSV Upload)")
-
-st.info("Upload a CSV with the same schema used during training.")
 
 sample_df = pd.DataFrame({
     "Date": ["01/15/2023", "07/20/2022"],
@@ -197,15 +179,8 @@ uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
 if uploaded_file:
     try:
         df = pd.read_csv(uploaded_file)
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
-        required_cols = sample_df.columns.tolist()
-        missing_cols = [c for c in required_cols if c not in df.columns]
-
-        if missing_cols:
-            st.error(f"❌ Missing columns: {missing_cols}")
-            st.stop()
-
-        df = df.copy()
         df["Predicted_Runs"] = pipeline.predict(df)
 
         st.dataframe(df)
