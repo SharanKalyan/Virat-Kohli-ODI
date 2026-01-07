@@ -25,45 +25,44 @@ def add_bg_from_local(image_file):
         encoded = base64.b64encode(f.read()).decode()
 
     st.markdown(
-        f"""
-        <style>
-        .stApp {{
-            background-image: url("data:image/jpeg;base64,{encoded}");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-        }}
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("data:image/jpeg;base64,{encoded}");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }}
 
-        section[data-testid="stMain"] {{
-            background-color: rgba(255, 255, 255, 0);
-            padding: 2rem;
-            border-radius: 12px;
-        }}
+    section[data-testid="stMain"] {{
+        background-color: rgba(255, 255, 255, 0);
+        padding: 2rem;
+        border-radius: 12px;
+    }}
 
-        html, body, [class*="css"], p, span, label, div {{
-            color: #00000  !important;
-        }}
+    /* 🔑 Only the main page title */
+    h1[data-testid="stTitle"] {{
+        color: #000000 !important;
+    }}
 
-        h1, h2, h3, h4, h5, h6 {{
-            color: #00000  !important;
-        }}
+    /* Keep inputs readable */
+    input, textarea {{
+        color: #FFFFFF !important;
+    }}
 
-        input, textarea {{
-            color: #FFFFFF !important;
-        }}
+    div[data-baseweb="select"] span {{
+        color: #FFFFFF !important;
+    }}
 
-        div[data-baseweb="select"] span {{
-            color: #FFFFFF !important;
-        }}
+    details summary {{
+        color: #FFFFFF !important;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-        details summary {{
-            color: #FFFFFF !important;
-        }}
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
 
 add_bg_from_local("vk.jpg")
 
