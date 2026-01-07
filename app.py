@@ -3,6 +3,7 @@ import pandas as pd
 import joblib
 from pathlib import Path
 import base64
+from datetime import date as dt_date
 
 # --------------------------------------------------
 # IMPORTANT: preprocessing import (pickle dependency)
@@ -25,45 +26,42 @@ def add_bg_from_local(image_file):
         encoded = base64.b64encode(f.read()).decode()
 
     st.markdown(
-    """
-    <style>
-    /* Background */
-    .stApp {
-        background-image: url("data:image/jpeg;base64,%s");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
+        """
+        <style>
+        .stApp {
+            background-image: url("data:image/jpeg;base64,%s");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
 
-    section[data-testid="stMain"] {
-        background-color: rgba(255, 255, 255, 0);
-        padding: 2rem;
-        border-radius: 12px;
-    }
+        section[data-testid="stMain"] {
+            background-color: rgba(255, 255, 255, 0);
+            padding: 2rem;
+            border-radius: 12px;
+        }
 
-    /* 🔥 FORCE ONLY PAGE TITLE TO BLACK (Streamlit Cloud safe) */
-    div[data-testid="stTitle"] h1 {
-        color: #000000 !important;
-    }
+        /* Page title only */
+        div[data-testid="stTitle"] h1 {
+            color: #000000 !important;
+        }
 
-    /* Keep everything else unchanged / readable */
-    input, textarea {
-        color: #FFFFFF !important;
-    }
+        input, textarea {
+            color: #FFFFFF !important;
+        }
 
-    div[data-baseweb="select"] span {
-        color: #FFFFFF !important;
-    }
+        div[data-baseweb="select"] span {
+            color: #FFFFFF !important;
+        }
 
-    details summary {
-        color: #FFFFFF !important;
-    }
-    </style>
-    """ % encoded,
-    unsafe_allow_html=True
-)
-
+        details summary {
+            color: #FFFFFF !important;
+        }
+        </style>
+        """ % encoded,
+        unsafe_allow_html=True
+    )
 
 add_bg_from_local("vk.jpg")
 
@@ -84,7 +82,7 @@ st.info("🔒 Demo ML application. No data is stored.")
 st.markdown("---")
 
 # --------------------------------------------------
-# Load Pipeline (NO CACHE — SAFE)
+# Load Pipeline
 # --------------------------------------------------
 MODEL_PATH = Path("final_pipeline.pkl")
 
@@ -93,6 +91,23 @@ if not MODEL_PATH.exists():
     st.stop()
 
 pipeline = joblib.load(MODEL_PATH)
+
+# --------------------------------------------------
+# Constants (Dropdown values)
+# --------------------------------------------------
+COUNTRY_LIST = [
+    'Sri Lanka', 'South Africa', 'India', 'Bangladesh', 'Zimbabwe',
+    'Trinidad and Tobago', 'Antigua and Barbuda', 'Jamaica', 'England',
+    'Wales', 'Australia', 'New Zealand', 'Guyana', 'Barbados', 'UAE'
+]
+
+OPPONENT_LIST = [
+    'Sri Lanka', 'Pakistan', 'Australia', 'West Indies', 'Bangladesh',
+    'South Africa', 'Zimbabwe', 'New Zealand', 'England', 'Ireland',
+    'Netherlands', 'Afghanistan', 'United Arab Emirates', 'Nepal'
+]
+
+SENA_COUNTRIES = {'South Africa', 'England', 'Wales', 'New Zealand', 'Australia'}
 
 # --------------------------------------------------
 # Model Overview
@@ -117,37 +132,71 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        date = st.text_input("Match Date (MM/DD/YYYY)", "01/15/2023")
-        innings = st.selectbox("Innings", ["1st", "2nd", "N/A - No Result"])
-        captain = st.selectbox("Captain?", ["Yes", "No"])
-        balls_faced = st.number_input("Balls Faced (B/F)", min_value=0, value=60)
+        match_date = st.date_input(
+            "Match Date",
+            value=dt_date(2023, 1, 15)
+        )
+
+        innings = st.selectbox(
+            "Innings",
+            ["1st", "2nd"]
+        )
+
+        captain_role = st.selectbox(
+            "Captain / Player",
+            ["Player", "Captain"],
+            index=0
+        )
+
+        balls_faced = st.number_input(
+            "Balls Faced (B/F)",
+            min_value=0,
+            value=60
+        )
 
     with col2:
-        country = st.text_input("Match Country", "India")
-        versus = st.text_input("Opponent", "Australia")
-        sena = st.selectbox("SENA Match?", ["Yes", "No"])
+        country = st.selectbox(
+            "Match Country",
+            COUNTRY_LIST,
+            index=COUNTRY_LIST.index("India")
+        )
+
+        versus = st.selectbox(
+            "Opponent",
+            OPPONENT_LIST,
+            index=OPPONENT_LIST.index("Australia")
+        )
+
+        # Auto SENA logic
+        sena_value = 1 if country in SENA_COUNTRIES else 0
+        st.text_input(
+            "SENA Match?",
+            value="Yes" if sena_value == 1 else "No",
+            disabled=True
+        )
 
     submitted = st.form_submit_button("Predict Runs")
 
+# --------------------------------------------------
+# Prediction Logic
+# --------------------------------------------------
 if submitted:
     try:
         X_input = pd.DataFrame([{
-            "Date": date,
+            "Date": match_date.strftime("%m/%d/%Y"),
             "M/Inns": innings,
-            "Captain": captain,
+            "Captain": "Yes" if captain_role == "Captain" else "No",
             "Country": country,
             "Versus": versus,
             "B/F": int(balls_faced),
-            "SENA": 1 if sena == "Yes" else 0
+            "SENA": sena_value
         }])
 
-        # Defensive conversion
         X_input["Date"] = pd.to_datetime(X_input["Date"], errors="coerce")
 
-        # 🔑 SAFE scalar extraction
         prediction = int(pipeline.predict(X_input).ravel()[0])
 
-        st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
+        st.success(f"🏏 **Predicted Runs:** {prediction}")
 
     except Exception as e:
         st.error(f"❌ Prediction failed: {e}")
@@ -161,7 +210,7 @@ st.header("📂 Batch Prediction (CSV Upload)")
 sample_df = pd.DataFrame({
     "Date": ["01/15/2023", "07/20/2022"],
     "M/Inns": ["1st", "2nd"],
-    "Captain": ["Yes", "No"],
+    "Captain": ["No", "Yes"],
     "Country": ["India", "England"],
     "Versus": ["Australia", "Pakistan"],
     "B/F": [75, 48],
@@ -182,8 +231,7 @@ if uploaded_file:
         df = pd.read_csv(uploaded_file)
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
-        # 🔑 SAFE batch prediction
-        df["Predicted_Runs"] = pipeline.predict(df).astype('int64')
+        df["Predicted_Runs"] = pipeline.predict(df).astype("int64")
 
         st.dataframe(df)
 
