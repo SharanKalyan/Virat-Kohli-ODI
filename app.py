@@ -169,10 +169,12 @@ with st.form("prediction_form"):
 
         # Auto SENA logic
         sena_value = 1 if country in SENA_COUNTRIES else 0
-        st.text_input(
-            "SENA Match?",
-            value="Yes" if sena_value == 1 else "No",
-            disabled=True
+
+        st.markdown(
+        f"""
+        **SENA Match?**  
+        {"✅ Yes" if sena_value == 1 else "❌ No"}
+        """
         )
 
     submitted = st.form_submit_button("Predict Runs")
