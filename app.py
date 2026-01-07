@@ -42,11 +42,11 @@ def add_bg_from_local(image_file):
         }}
 
         html, body, [class*="css"], p, span, label, div {{
-            color: #FFFFFF !important;
+            color: #00000  !important;
         }}
 
         h1, h2, h3, h4, h5, h6 {{
-            color: #FFFFFF !important;
+            color: #00000  !important;
         }}
 
         input, textarea {{
