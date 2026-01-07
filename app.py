@@ -25,41 +25,42 @@ def add_bg_from_local(image_file):
         encoded = base64.b64encode(f.read()).decode()
 
     st.markdown(
-    f"""
+    """
     <style>
-    .stApp {{
-        background-image: url("data:image/jpeg;base64,{encoded}");
+    /* Background */
+    .stApp {
+        background-image: url("data:image/jpeg;base64,%s");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
-    }}
+    }
 
-    section[data-testid="stMain"] {{
+    section[data-testid="stMain"] {
         background-color: rgba(255, 255, 255, 0);
         padding: 2rem;
         border-radius: 12px;
-    }}
+    }
 
-    /* 🔑 Only the main page title */
-    h1[data-testid="stTitle"] {{
+    /* 🔥 FORCE ONLY PAGE TITLE TO BLACK (Streamlit Cloud safe) */
+    div[data-testid="stTitle"] h1 {
         color: #000000 !important;
-    }}
+    }
 
-    /* Keep inputs readable */
-    input, textarea {{
+    /* Keep everything else unchanged / readable */
+    input, textarea {
         color: #FFFFFF !important;
-    }}
+    }
 
-    div[data-baseweb="select"] span {{
+    div[data-baseweb="select"] span {
         color: #FFFFFF !important;
-    }}
+    }
 
-    details summary {{
+    details summary {
         color: #FFFFFF !important;
-    }}
+    }
     </style>
-    """,
+    """ % encoded,
     unsafe_allow_html=True
 )
 
