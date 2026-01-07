@@ -86,7 +86,7 @@ st.markdown("---")
 # --------------------------------------------------
 # Load Pipeline (NO CACHE — IMPORTANT)
 # --------------------------------------------------
-MODEL_PATH = Path("kohli_odi_pipeline.pkl")
+MODEL_PATH = Path("final_pipeline.pkl")
 
 if not MODEL_PATH.exists():
     st.error("❌ Model pipeline file not found.")
