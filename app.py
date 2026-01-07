@@ -84,7 +84,7 @@ st.info("🔒 Demo ML application. No data is stored.")
 st.markdown("---")
 
 # --------------------------------------------------
-# Load Pipeline (NO CACHE — IMPORTANT)
+# Load Pipeline (NO CACHE — SAFE)
 # --------------------------------------------------
 MODEL_PATH = Path("final_pipeline.pkl")
 
@@ -144,7 +144,8 @@ if submitted:
         # Defensive conversion
         X_input["Date"] = pd.to_datetime(X_input["Date"], errors="coerce")
 
-        prediction = pipeline.predict(X_input)[0]
+        # 🔑 SAFE scalar extraction
+        prediction = float(pipeline.predict(X_input).ravel()[0])
 
         st.success(f"🏏 **Predicted Runs:** {round(prediction, 1)}")
 
@@ -181,7 +182,8 @@ if uploaded_file:
         df = pd.read_csv(uploaded_file)
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
 
-        df["Predicted_Runs"] = pipeline.predict(df)
+        # 🔑 SAFE batch prediction
+        df["Predicted_Runs"] = pipeline.predict(df).astype(float)
 
         st.dataframe(df)
 
