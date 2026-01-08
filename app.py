@@ -68,6 +68,29 @@ st.title("🏏 Virat Kohli – ODI Runs Prediction")
 
 st.markdown(
     """
+    <div style="display:flex; gap:24px; margin-top:8px; margin-bottom:16px;">
+
+        <div>
+            🔗 <strong>Model Implementation</strong><br>
+            <a href="https://github.com/SharanKalyan/Virat-Kohli-ODI/" target="_blank">
+                End-to-end ML pipeline, preprocessing & training code
+            </a>
+        </div>
+
+        <div>
+            📊 <strong>Insights Dashboard</strong><br>
+            <a href="https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes" target="_blank">
+                Interactive ODI performance analysis on Tableau Public
+            </a>
+        </div>
+
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    """
     Predict **runs scored by Virat Kohli in an ODI innings**  
     using historical match conditions and context.
     """
