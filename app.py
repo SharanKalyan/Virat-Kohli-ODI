@@ -78,6 +78,16 @@ st.markdown(
 
 st.markdown("---")
 
+st.markdown(
+    """
+    🔗 **The complete architecture, data pipeline, and model implementation are available in this project’s GitHub repository**  
+    [Virat Kohli ODI – GitHub](https://github.com/SharanKalyan/Virat-Kohli-ODI/)
+
+    🔗 **Visualizations and Interactive Dashboard**  
+    [Virat Kohli ODI – Tableau Dashboard](https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes)
+    """
+)
+
 # --------------------------------------------------
 # Load Pipeline
 # --------------------------------------------------
