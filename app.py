@@ -65,41 +65,6 @@ set_background("./images/landingpage.png")
 # --------------------------------------------------
 st.title("🏏 Virat Kohli – ODI Runs Prediction")
 
-# --------------------------------------------------
-# 🔗 TOP LINKS (FIXED & VISIBLE)
-# --------------------------------------------------
-st.markdown(
-    """
-    <div style="
-        display:flex;
-        gap:40px;
-        margin-top:10px;
-        margin-bottom:18px;
-        font-size:15px;
-    ">
-
-        <div>
-            <strong style="color:#000000;">🔗 Model Implementation</strong><br>
-            <a href="https://github.com/SharanKalyan/Virat-Kohli-ODI/"
-               target="_blank"
-               style="color:#000000; text-decoration:underline;">
-                End-to-end ML pipeline, preprocessing & training code
-            </a>
-        </div>
-
-        <div>
-            <strong style="color:#000000;">📊 Insights Dashboard</strong><br>
-            <a href="https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohliODIDashboard?publish=yes"
-               target="_blank"
-               style="color:#000000; text-decoration:underline;">
-                Interactive ODI performance analysis on Tableau Public
-            </a>
-        </div>
-
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # --------------------------------------------------
 # Intro text
