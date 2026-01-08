@@ -62,7 +62,7 @@ def add_bg_from_local(image_file):
         unsafe_allow_html=True
     )
 
-add_bg_from_local("vk.jpg")
+add_bg_from_local("landingpage.png")
 
 # --------------------------------------------------
 # Title & Intro
