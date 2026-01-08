@@ -40,9 +40,7 @@ The goal of this stage is to estimate the number of runs Virat Kohli is likely t
 # Results of Predictions
 # Metrics
 
-R Squared: 0.95 
-Mean Absolute Error: 7 (Runs)
-Root Mean Squared Error: 10 (Runs)
+R Squared: 0.95 ; Mean Absolute Error: 7 (Runs) ; Root Mean Squared Error: 10 (Runs)
 
 <img width="875" height="556" alt="image" src="https://github.com/user-attachments/assets/e9a23965-b137-48e7-befe-51bde5e2fe4a" />
 
