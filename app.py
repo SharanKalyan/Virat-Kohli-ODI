@@ -42,7 +42,6 @@ def add_bg_from_local(image_file):
             border-radius: 12px;
         }
 
-        /* Page title only */
         div[data-testid="stTitle"] h1 {
             color: #000000 !important;
         }
@@ -93,7 +92,7 @@ if not MODEL_PATH.exists():
 pipeline = joblib.load(MODEL_PATH)
 
 # --------------------------------------------------
-# Constants (Dropdown values)
+# Constants
 # --------------------------------------------------
 COUNTRY_LIST = [
     'Sri Lanka', 'South Africa', 'India', 'Bangladesh', 'Zimbabwe',
@@ -110,20 +109,6 @@ OPPONENT_LIST = [
 SENA_COUNTRIES = {'South Africa', 'England', 'Wales', 'New Zealand', 'Australia'}
 
 # --------------------------------------------------
-# Model Overview
-# --------------------------------------------------
-with st.expander("ℹ️ Model Overview"):
-    st.markdown(
-        """
-        **Model:** Linear Regression  
-        **Pipeline includes:**
-        - Custom column mapping (`FunctionTransformer`)
-        - Ordinal encoding for categorical variables
-        - ColumnTransformer with explicit columns
-        """
-    )
-
-# --------------------------------------------------
 # Single Prediction
 # --------------------------------------------------
 st.header("🧍 Single Match Prediction")
@@ -132,58 +117,21 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        match_date = st.date_input(
-            "Match Date",
-            value=dt_date(2023, 1, 15)
-        )
-
-        innings = st.selectbox(
-            "Innings",
-            ["1st", "2nd"]
-        )
-
-        captain_role = st.selectbox(
-            "Captain / Player",
-            ["Player", "Captain"],
-            index=0
-        )
-
-        balls_faced = st.number_input(
-            "Balls Faced (B/F)",
-            min_value=0,
-            value=60
-        )
+        match_date = st.date_input("Match Date", value=dt_date(2023, 1, 15))
+        innings = st.selectbox("Innings", ["1st", "2nd"])
+        captain_role = st.selectbox("Captain / Player", ["Player", "Captain"], index=0)
+        balls_faced = st.number_input("Balls Faced (B/F)", min_value=0, value=60)
 
     with col2:
-        country = st.selectbox(
-            "Match Country",
-            COUNTRY_LIST,
-            index=COUNTRY_LIST.index("India")
-        )
-
-        versus = st.selectbox(
-            "Opponent",
-            OPPONENT_LIST,
-            index=OPPONENT_LIST.index("Australia")
-        )
-
-        # Auto SENA logic
-        sena_value = 1 if country in SENA_COUNTRIES else 0
-
-        st.markdown(
-        f"""
-        **SENA Match?**  
-        {"✅ Yes" if sena_value == 1 else "❌ No"}
-        """
-        )
+        country = st.selectbox("Match Country", COUNTRY_LIST, index=COUNTRY_LIST.index("India"))
+        versus = st.selectbox("Opponent", OPPONENT_LIST, index=OPPONENT_LIST.index("Australia"))
 
     submitted = st.form_submit_button("Predict Runs")
 
-# --------------------------------------------------
-# Prediction Logic
-# --------------------------------------------------
 if submitted:
     try:
+        sena_value = 1 if country in SENA_COUNTRIES else 0
+
         X_input = pd.DataFrame([{
             "Date": match_date.strftime("%m/%d/%Y"),
             "M/Inns": innings,
@@ -195,7 +143,6 @@ if submitted:
         }])
 
         X_input["Date"] = pd.to_datetime(X_input["Date"], errors="coerce")
-
         prediction = int(pipeline.predict(X_input).ravel()[0])
 
         st.success(f"🏏 **Predicted Runs:** {prediction}")
@@ -216,7 +163,7 @@ sample_df = pd.DataFrame({
     "Country": ["India", "England"],
     "Versus": ["Australia", "Pakistan"],
     "B/F": [75, 48],
-    "SENA": [0, 1]
+    "SENA": [0, 1]  # still included for clarity
 })
 
 st.download_button(
@@ -232,6 +179,11 @@ if uploaded_file:
     try:
         df = pd.read_csv(uploaded_file)
         df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+
+        # 🔑 Ensure SENA consistency (override or create)
+        df["SENA"] = df["Country"].apply(
+            lambda x: 1 if x in SENA_COUNTRIES else 0
+        )
 
         df["Predicted_Runs"] = pipeline.predict(df).astype("int64")
 
