@@ -5,9 +5,6 @@ from pathlib import Path
 import base64
 from datetime import date as dt_date
 
-# --------------------------------------------------
-# IMPORTANT: preprocessing import (pickle dependency)
-# --------------------------------------------------
 from preprocessing import map_columns  # DO NOT REMOVE
 
 # --------------------------------------------------
@@ -19,53 +16,52 @@ st.set_page_config(
 )
 
 # --------------------------------------------------
-# Background Image
+# Background Handler
 # --------------------------------------------------
-def add_bg_from_local(image_file):
+def set_background(image_file):
     with open(image_file, "rb") as f:
         encoded = base64.b64encode(f.read()).decode()
 
     st.markdown(
-        """
+        f"""
         <style>
-        .stApp {
-            background-image: url("data:image/jpeg;base64,%s");
+        .stApp {{
+            background-image: url("data:image/jpeg;base64,{encoded}");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
-        }
+        }}
 
-        section[data-testid="stMain"] {
+        section[data-testid="stMain"] {{
             background-color: rgba(255, 255, 255, 0);
             padding: 2rem;
             border-radius: 12px;
-        }
+        }}
 
-        div[data-testid="stTitle"] h1 {
+        div[data-testid="stTitle"] h1 {{
             color: #000000 !important;
-        }
+        }}
 
-        input, textarea {
+        input, textarea {{
             color: #FFFFFF !important;
-        }
+        }}
 
-        div[data-baseweb="select"] span {
+        div[data-baseweb="select"] span {{
             color: #FFFFFF !important;
-        }
-
-        details summary {
-            color: #FFFFFF !important;
-        }
+        }}
         </style>
-        """ % encoded,
+        """,
         unsafe_allow_html=True
     )
 
-add_bg_from_local("landingpage.png")
+# --------------------------------------------------
+# Default background (before prediction)
+# --------------------------------------------------
+set_background("landingpage.png")
 
 # --------------------------------------------------
-# Title & Intro
+# Title
 # --------------------------------------------------
 st.title("🏏 Virat Kohli – ODI Runs Prediction")
 
@@ -75,8 +71,6 @@ st.markdown(
     using historical match conditions and context.
     """
 )
-
-st.info("🔒 Demo ML application. No data is stored.")
 
 st.markdown("---")
 
@@ -128,6 +122,9 @@ with st.form("prediction_form"):
 
     submitted = st.form_submit_button("Predict Runs")
 
+# --------------------------------------------------
+# Prediction Logic + Dynamic Background
+# --------------------------------------------------
 if submitted:
     try:
         sena_value = 1 if country in SENA_COUNTRIES else 0
@@ -143,58 +140,18 @@ if submitted:
         }])
 
         X_input["Date"] = pd.to_datetime(X_input["Date"], errors="coerce")
+
         prediction = int(pipeline.predict(X_input).ravel()[0])
+
+        # 🎯 Dynamic background selection
+        if prediction >= 100:
+            set_background("virat_100.png")
+        elif prediction >= 50:
+            set_background("virat_50.png")
+        else:
+            set_background("virat_sad.png")
 
         st.success(f"🏏 **Predicted Runs:** {prediction}")
 
     except Exception as e:
         st.error(f"❌ Prediction failed: {e}")
-
-# --------------------------------------------------
-# Batch Prediction
-# --------------------------------------------------
-st.markdown("---")
-st.header("📂 Batch Prediction (CSV Upload)")
-
-sample_df = pd.DataFrame({
-    "Date": ["01/15/2023", "07/20/2022"],
-    "M/Inns": ["1st", "2nd"],
-    "Captain": ["No", "Yes"],
-    "Country": ["India", "England"],
-    "Versus": ["Australia", "Pakistan"],
-    "B/F": [75, 48],
-    "SENA": [0, 1]  # still included for clarity
-})
-
-st.download_button(
-    "⬇️ Download Sample CSV",
-    sample_df.to_csv(index=False),
-    "sample_kohli_odi_data.csv",
-    "text/csv"
-)
-
-uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
-
-if uploaded_file:
-    try:
-        df = pd.read_csv(uploaded_file)
-        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
-
-        # 🔑 Ensure SENA consistency (override or create)
-        df["SENA"] = df["Country"].apply(
-            lambda x: 1 if x in SENA_COUNTRIES else 0
-        )
-
-        df["Predicted_Runs"] = pipeline.predict(df).astype("int64")
-
-        st.dataframe(df)
-
-        st.download_button(
-            "⬇️ Download Predictions",
-            df.to_csv(index=False),
-            "kohli_odi_predictions.csv",
-            "text/csv"
-        )
-
-    except Exception as e:
-        st.error(f"❌ Batch prediction failed: {e}")
