@@ -56,7 +56,7 @@ def set_background(image_file):
     )
 
 # --------------------------------------------------
-# Default background (before prediction)
+# Default background (ALWAYS set once)
 # --------------------------------------------------
 set_background("./images/landingpage.png")
 
@@ -123,7 +123,7 @@ with st.form("prediction_form"):
     submitted = st.form_submit_button("Predict Runs")
 
 # --------------------------------------------------
-# Prediction Logic + Dynamic Background
+# Prediction Logic + Dynamic Background (SINGLE ONLY)
 # --------------------------------------------------
 if submitted:
     try:
@@ -143,7 +143,7 @@ if submitted:
 
         prediction = int(pipeline.predict(X_input).ravel()[0])
 
-        # 🎯 Dynamic background selection
+        # 🎯 Dynamic background ONLY for single prediction
         if prediction >= 100:
             set_background("./images/virat_100.png")
         elif prediction >= 50:
@@ -155,3 +155,52 @@ if submitted:
 
     except Exception as e:
         st.error(f"❌ Prediction failed: {e}")
+
+# --------------------------------------------------
+# Batch Prediction (NO background change)
+# --------------------------------------------------
+st.markdown("---")
+st.header("📂 Batch Prediction (CSV Upload)")
+
+sample_df = pd.DataFrame({
+    "Date": ["01/15/2023", "07/20/2022"],
+    "M/Inns": ["1st", "2nd"],
+    "Captain": ["No", "Yes"],
+    "Country": ["India", "England"],
+    "Versus": ["Australia", "Pakistan"],
+    "B/F": [75, 48],
+    "SENA": [0, 1]
+})
+
+st.download_button(
+    "⬇️ Download Sample CSV",
+    sample_df.to_csv(index=False),
+    "sample_kohli_odi_data.csv",
+    "text/csv"
+)
+
+uploaded_file = st.file_uploader("Upload CSV file", type=["csv"])
+
+if uploaded_file:
+    try:
+        df = pd.read_csv(uploaded_file)
+        df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
+
+        # Ensure SENA consistency
+        df["SENA"] = df["Country"].apply(
+            lambda x: 1 if x in SENA_COUNTRIES else 0
+        )
+
+        df["Predicted_Runs"] = pipeline.predict(df).astype("int64")
+
+        st.dataframe(df)
+
+        st.download_button(
+            "⬇️ Download Predictions",
+            df.to_csv(index=False),
+            "kohli_odi_predictions.csv",
+            "text/csv"
+        )
+
+    except Exception as e:
+        st.error(f"❌ Batch prediction failed: {e}")
