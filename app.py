@@ -58,7 +58,7 @@ def set_background(image_file):
 # --------------------------------------------------
 # Default background (before prediction)
 # --------------------------------------------------
-set_background("landingpage.png")
+set_background("./images/landingpage.png")
 
 # --------------------------------------------------
 # Title
@@ -145,11 +145,11 @@ if submitted:
 
         # 🎯 Dynamic background selection
         if prediction >= 100:
-            set_background("virat_100.png")
+            set_background("./images/virat_100.png")
         elif prediction >= 50:
-            set_background("virat_50.png")
+            set_background("./images/virat_50.png")
         else:
-            set_background("virat_sad.png")
+            set_background("./images/virat_sad.png")
 
         st.success(f"🏏 **Predicted Runs:** {prediction}")
 
