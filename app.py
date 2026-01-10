@@ -165,7 +165,7 @@ if submitted:
         elif prediction >= 50:
             set_background("./images/virat_50.png")
         else:
-            set_background("./images/virat_sad.png")
+            set_background("./images/virat_sad.webp")
 
         st.success(f"🏏 **Predicted Runs:** {prediction}")
 
