@@ -127,7 +127,7 @@ with st.form("prediction_form"):
     col1, col2 = st.columns(2)
 
     with col1:
-        match_date = st.date_input("Match Date", value=dt_date(2023, 1, 15))
+        match_date = st.date_input("Match Date", value=dt_date(2026, 1, 15))
         innings = st.selectbox("Innings", ["1st", "2nd"])
         captain_role = st.selectbox("Captain / Player", ["Player", "Captain"], index=0)
         balls_faced = st.number_input("Balls Faced (B/F)", min_value=0, value=60)
