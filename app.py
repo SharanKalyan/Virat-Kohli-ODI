@@ -63,7 +63,7 @@ set_background("./images/landingpage.png")
 # --------------------------------------------------
 # Title
 # --------------------------------------------------
-st.title("🏏 Virat Kohli – ODI Runs Prediction")
+st.title("Virat Kohli – ODI Runs Prediction")
 
 
 # --------------------------------------------------
@@ -121,7 +121,7 @@ SENA_COUNTRIES = {'South Africa', 'England', 'Wales', 'New Zealand', 'Australia'
 # --------------------------------------------------
 # Single Prediction
 # --------------------------------------------------
-st.header("🧍 Single Match Prediction")
+st.header("Single Match Prediction")
 
 with st.form("prediction_form"):
     col1, col2 = st.columns(2)
