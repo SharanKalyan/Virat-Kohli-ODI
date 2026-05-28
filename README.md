@@ -20,7 +20,7 @@ Another significant challenge was identifying and standardizing the geographical
 This notebook focuses on exploratory data analysis (EDA) and visualization. Most insights were derived and validated using the Tableau dashboard. Through this analysis, I identified:
 Performance patterns against different oppositions
 Strengths and weaknesses under varying conditions
-Situational trends where performance peaks or declines
+Situational trends where performance peaks or declines.
 The finalized analytical dataset was then prepared and forwarded for machine learning modeling.
 
 ### 3. RegressionPipeline-Virat-Kohli-ODI.ipynb
