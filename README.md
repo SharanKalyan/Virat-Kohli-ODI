@@ -10,7 +10,6 @@ https://virat-kohli-odi-predictions.streamlit.app/
 
 # Project Structure & Workflow
 ### 1. Cleaning-Virat-Kohli-ODI.ipynb
-
 This notebook contains the complete data cleaning pipeline.
 The primary challenge was resolving inconsistencies across multiple columns. For example, the Runs column was stored as a string due to special characters such as *, which indicate not-out innings. Additional issues included missing values, inconsistent formats, and noisy data.
 Another significant challenge was identifying and standardizing the geographical locations of cricket grounds. After addressing these issues, the cleaned and structured dataset was saved for downstream analysis.
