@@ -9,7 +9,6 @@ https://public.tableau.com/app/profile/sharankalyan/viz/ViratKohli-ODI/ViratKohl
 https://virat-kohli-odi-predictions.streamlit.app/
 
 # Project Structure & Workflow
-
 ### 1. Cleaning-Virat-Kohli-ODI.ipynb
 
 This notebook contains the complete data cleaning pipeline.
